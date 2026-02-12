@@ -31,13 +31,19 @@ from core.data_cleaning import batch_clean_raw_data
 
 def run_comparison_workflow(args) -> None:
     """Execute the comparison workflow."""
+    plot_descriptors = None
+    if args.plot_descriptors:
+        plot_descriptors = [s.strip() for s in args.plot_descriptors.split(",") if s.strip()]
     cfg = load_comparison_config(
         cpp_dir=args.cpp_dir,
         matlab_dir=args.matlab_dir,
         pairs_file=args.pairs,
         out_file=args.out,
-        make_plots=not args.no_plots,
+        make_plots=args.make_plots,
+        plot_descriptors=plot_descriptors,
     )
+
+    cfg.out_file.parent.mkdir(parents=True, exist_ok=True)
 
     print("=== LOVAMAP Comparison Workflow ===")
     print(f"  C++ dir     : {cfg.cpp_dir}")
@@ -45,6 +51,8 @@ def run_comparison_workflow(args) -> None:
     print(f"  Pairs file  : {cfg.pairs_file}")
     print(f"  Output file : {cfg.out_file}")
     print(f"  Make plots  : {cfg.make_plots}")
+    if cfg.make_plots:
+        print(f"  Plot keys   : {cfg.plot_descriptors}")
     print(f"  Descriptors : {cfg.descriptors_to_compare}")
     print()
 
@@ -77,6 +85,7 @@ def run_cleaning_workflow(args) -> None:
         x_max=cfg.x_max,
         y_max=cfg.y_max,
         z_max=cfg.z_max,
+        dx=cfg.dx,
         verbose=cfg.verbose,
     )
 
@@ -114,10 +123,24 @@ def main() -> None:
         type=str,
         help="Output summary Excel file path (overrides default).",
     )
-    comp_parser.add_argument(
-        "--no-plots",
+    plot_group = comp_parser.add_mutually_exclusive_group()
+    plot_group.add_argument(
+        "--plots",
+        dest="make_plots",
         action="store_true",
+        help="Enable plotting.",
+    )
+    plot_group.add_argument(
+        "--no-plots",
+        dest="make_plots",
+        action="store_false",
         help="Disable plotting.",
+    )
+    plot_group.set_defaults(make_plots=None)
+    comp_parser.add_argument(
+        "--plot-descriptors",
+        type=str,
+        help="Comma-separated descriptor keys to plot (defaults from config).",
     )
     comp_parser.set_defaults(func=run_comparison_workflow)
 
@@ -129,14 +152,14 @@ def main() -> None:
     clean_parser.add_argument(
         "--raw-dir",
         type=str,
-        default="data/raw",
-        help="Directory containing raw .dat files (default: data/raw).",
+        default=None,
+        help="Directory containing raw .dat files (default: config default).",
     )
     clean_parser.add_argument(
         "--clean-dir",
         type=str,
-        default="data/clean",
-        help="Directory to save cleaned .dat files (default: data/clean).",
+        default=None,
+        help="Directory to save cleaned .dat files (default: config default).",
     )
     clean_parser.add_argument(
         "--y-max",

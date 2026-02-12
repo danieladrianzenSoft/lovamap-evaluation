@@ -362,7 +362,7 @@ def run_comparison(cfg: Config) -> None:
                 )
                 # Optionally produce overlaid histogram plots for vector descriptors
                 try:
-                    if getattr(cfg, "make_plots", False):
+                    if getattr(cfg, "make_plots", False) and spec.key in getattr(cfg, "plot_descriptors", []):
                         # Use matlab filename in plot title and include descriptor key
                         plots_dir = cfg.out_file.parent / "plots"
                         plots_dir.mkdir(parents=True, exist_ok=True)

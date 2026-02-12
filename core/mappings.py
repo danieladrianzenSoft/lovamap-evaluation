@@ -1,8 +1,20 @@
 from dataclasses import dataclass
-from typing import Literal
+from typing import Literal, Sequence, cast
 
 DescriptorGroup = Literal["global", "pore", "other"]
 DescriptorKind = Literal["scalar", "vector"]  # scalar = one value per file, vector = per pore/particle
+DescriptorKey = Literal[
+    "dx",
+    "NumParticles",
+    "VFF",
+    "NumPoresTotal",
+    "PoreVolume",
+    "PoreSurfaceArea",
+    "PoreAspectRatio",
+    "PoreLongestLength",
+    "LargestEnclosedSphere",
+    "ParticleDiameter",
+]
 
 @dataclass
 class DescriptorSpec:
@@ -101,3 +113,17 @@ DESCRIPTORS: dict[str, DescriptorSpec] = {
         cpp_name="ParticleDiam",
     ),
 }
+
+DESCRIPTOR_KEYS = tuple(DESCRIPTORS.keys())
+
+
+def validate_descriptor_keys(keys: Sequence[str]) -> list[DescriptorKey]:
+    invalid = [key for key in keys if key not in DESCRIPTORS]
+    if invalid:
+        raise ValueError(
+            "Unknown descriptor keys: "
+            + ", ".join(invalid)
+            + ". Valid keys: "
+            + ", ".join(DESCRIPTOR_KEYS)
+        )
+    return [cast(DescriptorKey, key) for key in keys]

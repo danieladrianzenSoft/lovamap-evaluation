@@ -22,8 +22,8 @@ class CleanConfig:
 
 # Default values
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_RAW_DIR = PROJECT_ROOT / "data" / "raw"
-DEFAULT_CLEAN_DIR = PROJECT_ROOT / "data" / "clean"
+DEFAULT_RAW_DIR = PROJECT_ROOT / "data" / "scaffolds" / "raw"
+DEFAULT_CLEAN_DIR = PROJECT_ROOT / "data" / "scaffolds" / "clean"
 DEFAULT_X_MAX = None
 DEFAULT_Y_MAX = None
 DEFAULT_Z_MAX = 600
