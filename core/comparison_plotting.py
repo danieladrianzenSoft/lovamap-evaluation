@@ -5,12 +5,17 @@ from lovamap-cpp and MATLAB outputs.
 """
 from __future__ import annotations
 
+import warnings
 from pathlib import Path
 from typing import Sequence
 
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+
+# Suppress FutureWarning from seaborn internals about deprecated
+# pd.option_context('mode.use_inf_as_na', ...) in older seaborn versions.
+warnings.filterwarnings("ignore", message="use_inf_as_na option is deprecated", category=FutureWarning)
 
 
 def plot_overlaid_histogram(

@@ -85,7 +85,7 @@ def load_matlab_excel(path: Path) -> Dict[str, Dict[str, Any]]:
     }
 
 
-def load_cpp_json(path: Path) -> Dict[str, Dict[str, Any]]:
+def load_cpp_json(path: Path, interior_only: bool = False) -> Dict[str, Dict[str, Any]]:
     """
     Parse LOVAMAP C++ JSON output into:
       {
@@ -93,6 +93,9 @@ def load_cpp_json(path: Path) -> Dict[str, Dict[str, Any]]:
         "pore":   { cpp_name -> np.ndarray },
         "other":  { cpp_name -> np.ndarray },
       }
+
+    If *interior_only* is True, pore descriptor arrays are filtered to keep
+    only entries where ``IsInterior == True`` (matching MATLAB interior-only files).
     """
     with open(path, "r") as f:
         data = json.load(f)
@@ -114,6 +117,23 @@ def load_cpp_json(path: Path) -> Dict[str, Dict[str, Any]]:
 
     pore_descs = _load_block("poreDescriptors")
     other_descs = _load_block("otherDescriptors")
+
+    # Filter pore descriptors to interior-only when requested
+    if interior_only:
+        is_interior_raw = data.get("poreDescriptors", {}).get("IsInterior", {}).get("values", [])
+        if is_interior_raw:
+            mask = np.array(is_interior_raw, dtype=bool)
+            pore_descs = {
+                name: arr[mask] if len(arr) == len(mask) else arr
+                for name, arr in pore_descs.items()
+                if name != "IsInterior"
+            }
+        else:
+            # No IsInterior field — remove it if present, keep all pores
+            pore_descs.pop("IsInterior", None)
+    else:
+        # Even without filtering, drop IsInterior — it's not a descriptor to compare
+        pore_descs.pop("IsInterior", None)
 
     return {
         "global": globals_norm,
@@ -145,6 +165,8 @@ def compare_descriptor(
     m_block = matlab_data.get(group, {})
     c_block = cpp_data.get(group, {})
 
+    rel_diff_thresh = getattr(cfg, "rel_diff_threshold", 0.01) if cfg is not None else 0.01
+
     if kind == "scalar":
         if spec.matlab_name not in m_block or spec.cpp_name not in c_block:
             return {
@@ -157,6 +179,7 @@ def compare_descriptor(
                 "cpp_value": np.nan,
                 "abs_diff": np.nan,
                 "rel_diff": np.nan,
+                "similar": False,
             }
 
         m_val = float(m_block[spec.matlab_name])
@@ -174,6 +197,7 @@ def compare_descriptor(
             "cpp_value": c_val,
             "abs_diff": abs_diff,
             "rel_diff": rel_diff,
+            "similar": bool(rel_diff <= rel_diff_thresh),
         }
 
     # kind == "vector"
@@ -281,6 +305,65 @@ def compare_descriptor(
     }
 
 
+# ---------- descriptor summary ----------
+
+def _build_descriptor_summary(
+    scalar_df: pd.DataFrame,
+    vector_df: pd.DataFrame,
+) -> pd.DataFrame:
+    """Build a cross-file summary with one row per descriptor, sorted by pct_similar ascending."""
+    rows: List[Dict[str, Any]] = []
+
+    if not scalar_df.empty:
+        for key, grp in scalar_df.groupby("key"):
+            n_files = len(grp)
+            n_similar = int(grp["similar"].sum())
+            rows.append({
+                "descriptor": key,
+                "kind": "scalar",
+                "n_files_tested": n_files,
+                "n_similar": n_similar,
+                "pct_similar": round(n_similar / n_files * 100, 1) if n_files else np.nan,
+                "mean_rel_diff": grp["rel_diff"].mean(),
+                "median_rel_diff": grp["rel_diff"].median(),
+                "max_rel_diff": grp["rel_diff"].max(),
+                "mean_abs_diff": grp["abs_diff"].mean(),
+                "mean_ks_pvalue": np.nan,
+                "median_ks_pvalue": np.nan,
+                "mean_wasserstein": np.nan,
+                "median_wasserstein": np.nan,
+                "mean_rmse": np.nan,
+            })
+
+    if not vector_df.empty:
+        for key, grp in vector_df.groupby("key"):
+            n_files = len(grp)
+            n_similar = int(grp["similar"].sum())
+            rows.append({
+                "descriptor": key,
+                "kind": "vector",
+                "n_files_tested": n_files,
+                "n_similar": n_similar,
+                "pct_similar": round(n_similar / n_files * 100, 1) if n_files else np.nan,
+                "mean_rel_diff": np.nan,
+                "median_rel_diff": np.nan,
+                "max_rel_diff": np.nan,
+                "mean_abs_diff": np.nan,
+                "mean_ks_pvalue": grp["ks_pvalue"].mean(),
+                "median_ks_pvalue": grp["ks_pvalue"].median(),
+                "mean_wasserstein": grp["wasserstein"].mean(),
+                "median_wasserstein": grp["wasserstein"].median(),
+                "mean_rmse": grp["rmse"].mean(),
+            })
+
+    if not rows:
+        return pd.DataFrame()
+
+    summary = pd.DataFrame(rows)
+    summary = summary.sort_values("pct_similar", ascending=True).reset_index(drop=True)
+    return summary
+
+
 # ---------- main orchestration ----------
 
 def run_comparison(cfg: Config) -> None:
@@ -326,7 +409,7 @@ def run_comparison(cfg: Config) -> None:
             continue
 
         matlab_data = load_matlab_excel(matlab_path)
-        cpp_data = load_cpp_json(cpp_path)
+        cpp_data = load_cpp_json(cpp_path, interior_only=cfg.cpp_interior_only)
 
         for key in cfg.descriptors_to_compare:
             spec = DESCRIPTORS.get(key)
@@ -362,7 +445,7 @@ def run_comparison(cfg: Config) -> None:
                 )
                 # Optionally produce overlaid histogram plots for vector descriptors
                 try:
-                    if getattr(cfg, "make_plots", False) and spec.key in getattr(cfg, "plot_descriptors", []):
+                    if getattr(cfg, "make_plots", False) and key in getattr(cfg, "plot_descriptors", []):
                         # Use matlab filename in plot title and include descriptor key
                         plots_dir = cfg.out_file.parent / "plots"
                         plots_dir.mkdir(parents=True, exist_ok=True)
@@ -396,10 +479,25 @@ def run_comparison(cfg: Config) -> None:
     scalar_df = pd.DataFrame(scalar_rows) if scalar_rows else pd.DataFrame()
     vector_df = pd.DataFrame(vector_rows) if vector_rows else pd.DataFrame()
 
+    # Sort detail sheets by descriptor key, then file ID
+    if not scalar_df.empty:
+        scalar_df = scalar_df.sort_values(["key", "id"]).reset_index(drop=True)
+    if not vector_df.empty:
+        vector_df = vector_df.sort_values(["key", "id"]).reset_index(drop=True)
+
+    summary_df = _build_descriptor_summary(scalar_df, vector_df)
+
     with pd.ExcelWriter(cfg.out_file) as writer:
         if not scalar_df.empty:
             scalar_df.to_excel(writer, sheet_name="scalar_descriptors", index=False)
         if not vector_df.empty:
             vector_df.to_excel(writer, sheet_name="vector_descriptors", index=False)
+        if not summary_df.empty:
+            summary_df.to_excel(writer, sheet_name="descriptor_summary", index=False)
 
     print(f"\n[INFO] Comparison summary written to: {cfg.out_file}")
+
+    if not summary_df.empty:
+        print("\n=== Descriptor Summary ===")
+        print(summary_df.to_string(index=False))
+        print()

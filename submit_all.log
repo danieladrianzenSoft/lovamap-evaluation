@@ -1,0 +1,1149 @@
+=== LOVAMAP API Submission Workflow ===
+  API URL      : https://core.lovamap.com
+  Scaffold dir : /Users/dzen/Library/CloudStorage/Box-Box/Lindsay Riley/Electronic Notebook/Void Space Project/MIMC/Data/Domains/Particles/Simulated/Jsons
+  Scaffold dir : /Users/dzen/Library/CloudStorage/Box-Box/Lindsay Riley/Electronic Notebook/Void Space Project/MIMC/Data/Domains/Particles/Simulated/Dats
+  Output dir   : data/descriptors/cpp/batch_all_scaffolds
+  dx           : 2.0
+  Generate mesh: False
+  Poll interval: 3.0s
+  Job timeout  : 300.0s
+
+Authenticating...
+  Authenticated successfully.
+
+Found 456 scaffold file(s) to submit:
+  - beadInfo_spheres_mu70_sd15_v0.dat
+  - beadInfo_spheres_mu70_sd15_v1.dat
+  - beadInfo_spheres_mu70_sd15_v2.dat
+  - beadInfo_spheres_mu70_sd15_v3.dat
+  - beadInfo_spheres_mu70_sd15_v4.dat
+  - beadInfo_spheres_mu70_sd15_v5.dat
+  - beadInfo_spheres_mu70_sd15_v6.dat
+  - beadInfo_spheres_mu70_sd15_v7.dat
+  - beadInfo_spheres_mu70_sd15_v8.dat
+  - beadInfo_spheres_mu70_sd15_v9.dat
+  - beadInfo_spheres_normal_dist_100,00_01.dat
+  - beadInfo_spheres_normal_dist_100,00_02.dat
+  - beadInfo_spheres_normal_dist_100,00_03.dat
+  - beadInfo_spheres_normal_dist_100,00_04.dat
+  - beadInfo_spheres_normal_dist_100,00_05.dat
+  - beadInfo_spheres_normal_dist_100,00_06.dat
+  - beadInfo_spheres_normal_dist_100,00_07.dat
+  - beadInfo_spheres_normal_dist_100,00_08.dat
+  - beadInfo_spheres_normal_dist_100,00_09.dat
+  - beadInfo_spheres_normal_dist_100,00_10.dat
+  - beadInfo_spheres_normal_dist_100,02_01.dat
+  - beadInfo_spheres_normal_dist_100,02_02.dat
+  - beadInfo_spheres_normal_dist_100,02_03.dat
+  - beadInfo_spheres_normal_dist_100,02_04.dat
+  - beadInfo_spheres_normal_dist_100,02_05.dat
+  - beadInfo_spheres_normal_dist_100,02_06.dat
+  - beadInfo_spheres_normal_dist_100,02_07.dat
+  - beadInfo_spheres_normal_dist_100,02_08.dat
+  - beadInfo_spheres_normal_dist_100,02_09.dat
+  - beadInfo_spheres_normal_dist_100,02_10.dat
+  - beadInfo_spheres_normal_dist_100,04_01.dat
+  - beadInfo_spheres_normal_dist_100,04_02.dat
+  - beadInfo_spheres_normal_dist_100,04_03.dat
+  - beadInfo_spheres_normal_dist_100,04_04.dat
+  - beadInfo_spheres_normal_dist_100,04_05.dat
+  - beadInfo_spheres_normal_dist_100,04_06.dat
+  - beadInfo_spheres_normal_dist_100,04_07.dat
+  - beadInfo_spheres_normal_dist_100,04_08.dat
+  - beadInfo_spheres_normal_dist_100,04_09.dat
+  - beadInfo_spheres_normal_dist_100,04_10.dat
+  - beadInfo_spheres_normal_dist_100,05_01.dat
+  - beadInfo_spheres_normal_dist_100,05_02.dat
+  - beadInfo_spheres_normal_dist_100,05_03.dat
+  - beadInfo_spheres_normal_dist_100,05_04.dat
+  - beadInfo_spheres_normal_dist_100,05_05.dat
+  - beadInfo_spheres_normal_dist_100,05_06.dat
+  - beadInfo_spheres_normal_dist_100,05_07.dat
+  - beadInfo_spheres_normal_dist_100,05_08.dat
+  - beadInfo_spheres_normal_dist_100,05_09.dat
+  - beadInfo_spheres_normal_dist_100,05_10.dat
+  - beadInfo_spheres_normal_dist_100,06_01.dat
+  - beadInfo_spheres_normal_dist_100,06_02.dat
+  - beadInfo_spheres_normal_dist_100,06_03.dat
+  - beadInfo_spheres_normal_dist_100,06_04.dat
+  - beadInfo_spheres_normal_dist_100,06_05.dat
+  - beadInfo_spheres_normal_dist_100,06_06.dat
+  - beadInfo_spheres_normal_dist_100,06_07.dat
+  - beadInfo_spheres_normal_dist_100,06_08.dat
+  - beadInfo_spheres_normal_dist_100,06_09.dat
+  - beadInfo_spheres_normal_dist_100,06_10.dat
+  - beadInfo_spheres_normal_dist_100,08_01.dat
+  - beadInfo_spheres_normal_dist_100,08_02.dat
+  - beadInfo_spheres_normal_dist_100,08_03.dat
+  - beadInfo_spheres_normal_dist_100,08_04.dat
+  - beadInfo_spheres_normal_dist_100,08_05.dat
+  - beadInfo_spheres_normal_dist_100,08_06.dat
+  - beadInfo_spheres_normal_dist_100,08_07.dat
+  - beadInfo_spheres_normal_dist_100,08_08.dat
+  - beadInfo_spheres_normal_dist_100,08_09.dat
+  - beadInfo_spheres_normal_dist_100,08_10.dat
+  - beadInfo_spheres_normal_dist_100,10_01.dat
+  - beadInfo_spheres_normal_dist_100,10_02.dat
+  - beadInfo_spheres_normal_dist_100,10_03.dat
+  - beadInfo_spheres_normal_dist_100,10_04.dat
+  - beadInfo_spheres_normal_dist_100,10_05.dat
+  - beadInfo_spheres_normal_dist_100,10_06.dat
+  - beadInfo_spheres_normal_dist_100,10_07.dat
+  - beadInfo_spheres_normal_dist_100,10_08.dat
+  - beadInfo_spheres_normal_dist_100,10_09.dat
+  - beadInfo_spheres_normal_dist_100,10_10.dat
+  - beadInfo_spheres_normal_dist_100,12_01.dat
+  - beadInfo_spheres_normal_dist_100,12_02.dat
+  - beadInfo_spheres_normal_dist_100,12_03.dat
+  - beadInfo_spheres_normal_dist_100,12_04.dat
+  - beadInfo_spheres_normal_dist_100,12_05.dat
+  - beadInfo_spheres_normal_dist_100,12_06.dat
+  - beadInfo_spheres_normal_dist_100,12_07.dat
+  - beadInfo_spheres_normal_dist_100,12_08.dat
+  - beadInfo_spheres_normal_dist_100,12_09.dat
+  - beadInfo_spheres_normal_dist_100,12_10.dat
+  - beadInfo_spheres_normal_dist_100,15_01.dat
+  - beadInfo_spheres_normal_dist_100,15_02.dat
+  - beadInfo_spheres_normal_dist_100,15_03.dat
+  - beadInfo_spheres_normal_dist_100,15_04.dat
+  - beadInfo_spheres_normal_dist_100,15_05.dat
+  - beadInfo_spheres_normal_dist_100,15_06.dat
+  - beadInfo_spheres_normal_dist_100,15_07.dat
+  - beadInfo_spheres_normal_dist_100,15_08.dat
+  - beadInfo_spheres_normal_dist_100,15_09.dat
+  - beadInfo_spheres_normal_dist_100,15_10.dat
+  - beadInfo_spheres_normal_dist_100,20_01.dat
+  - beadInfo_spheres_normal_dist_100,20_02.dat
+  - beadInfo_spheres_normal_dist_100,20_03.dat
+  - beadInfo_spheres_normal_dist_100,20_04.dat
+  - beadInfo_spheres_normal_dist_100,20_05.dat
+  - beadInfo_spheres_normal_dist_100,20_06.dat
+  - beadInfo_spheres_normal_dist_100,20_07.dat
+  - beadInfo_spheres_normal_dist_100,20_08.dat
+  - beadInfo_spheres_normal_dist_100,20_09.dat
+  - beadInfo_spheres_normal_dist_100,20_10.dat
+  - beadInfo_spheres_normal_dist_100,25_01.dat
+  - beadInfo_spheres_normal_dist_100,25_02.dat
+  - beadInfo_spheres_normal_dist_100,25_03.dat
+  - beadInfo_spheres_normal_dist_100,25_04.dat
+  - beadInfo_spheres_normal_dist_100,25_05.dat
+  - beadInfo_spheres_normal_dist_100,25_06.dat
+  - beadInfo_spheres_normal_dist_100,25_07.dat
+  - beadInfo_spheres_normal_dist_100,25_08.dat
+  - beadInfo_spheres_normal_dist_100,25_09.dat
+  - beadInfo_spheres_normal_dist_100,25_10.dat
+  - beadInfo_spheres_square_040.dat
+  - beadInfo_spheres_uniform_40_100_v0.dat
+  - beadInfo_spheres_uniform_40_100_v1.dat
+  - beadInfo_spheres_uniform_40_100_v2.dat
+  - beadInfo_spheres_uniform_40_100_v3.dat
+  - beadInfo_spheres_uniform_40_100_v4.dat
+  - beadInfo_spheres_uniform_40_100_v5.dat
+  - beadInfo_spheres_uniform_40_100_v6.dat
+  - beadInfo_spheres_uniform_40_100_v7.dat
+  - beadInfo_spheres_uniform_40_100_v8.dat
+  - beadInfo_spheres_uniform_40_100_v9.dat
+  - beadInfo_spheres_{100,100}_100_{0,100}_0.dat
+  - beadInfo_spheres_{100,100}_100_{0,100}_1.dat
+  - beadInfo_spheres_{100,100}_100_{0,100}_2.dat
+  - beadInfo_spheres_{100,100}_100_{0,100}_3.dat
+  - beadInfo_spheres_{100,100}_100_{0,100}_4.dat
+  - beadInfo_spheres_{100,100}_100_{0,100}_5.dat
+  - beadInfo_spheres_{100,100}_100_{0,100}_6.dat
+  - beadInfo_spheres_{100,100}_100_{0,100}_7.dat
+  - beadInfo_spheres_{100,100}_100_{0,100}_8.dat
+  - beadInfo_spheres_{100,100}_100_{0,100}_9.dat
+  - beadInfo_spheres_{110,100}_{,100}_0.dat
+  - beadInfo_spheres_{110,100}_{,100}_1.dat
+  - beadInfo_spheres_{110,100}_{,100}_2.dat
+  - beadInfo_spheres_{110,100}_{,100}_3.dat
+  - beadInfo_spheres_{110,100}_{,100}_4.dat
+  - beadInfo_spheres_{110,100}_{,100}_5.dat
+  - beadInfo_spheres_{110,100}_{,100}_6.dat
+  - beadInfo_spheres_{110,100}_{,100}_7.dat
+  - beadInfo_spheres_{110,100}_{,100}_8.dat
+  - beadInfo_spheres_{110,100}_{,100}_9.dat
+  - beadInfo_spheres_{120,100}_{,100}_0.dat
+  - beadInfo_spheres_{120,100}_{,100}_1.dat
+  - beadInfo_spheres_{120,100}_{,100}_2.dat
+  - beadInfo_spheres_{120,100}_{,100}_3.dat
+  - beadInfo_spheres_{120,100}_{,100}_4.dat
+  - beadInfo_spheres_{120,100}_{,100}_5.dat
+  - beadInfo_spheres_{120,100}_{,100}_6.dat
+  - beadInfo_spheres_{120,100}_{,100}_7.dat
+  - beadInfo_spheres_{120,100}_{,100}_8.dat
+  - beadInfo_spheres_{120,100}_{,100}_9.dat
+  - beadInfo_spheres_{130,100}_{,100}_0.dat
+  - beadInfo_spheres_{130,100}_{,100}_1.dat
+  - beadInfo_spheres_{130,100}_{,100}_2.dat
+  - beadInfo_spheres_{130,100}_{,100}_3.dat
+  - beadInfo_spheres_{130,100}_{,100}_4.dat
+  - beadInfo_spheres_{130,100}_{,100}_5.dat
+  - beadInfo_spheres_{130,100}_{,100}_6.dat
+  - beadInfo_spheres_{130,100}_{,100}_7.dat
+  - beadInfo_spheres_{130,100}_{,100}_8.dat
+  - beadInfo_spheres_{130,100}_{,100}_9.dat
+  - beadInfo_spheres_{140,100}_{,100}_0.dat
+  - beadInfo_spheres_{140,100}_{,100}_1.dat
+  - beadInfo_spheres_{140,100}_{,100}_2.dat
+  - beadInfo_spheres_{140,100}_{,100}_3.dat
+  - beadInfo_spheres_{140,100}_{,100}_4.dat
+  - beadInfo_spheres_{140,100}_{,100}_5.dat
+  - beadInfo_spheres_{140,100}_{,100}_6.dat
+  - beadInfo_spheres_{140,100}_{,100}_7.dat
+  - beadInfo_spheres_{140,100}_{,100}_8.dat
+  - beadInfo_spheres_{140,100}_{,100}_9.dat
+  - beadInfo_spheres_{150,100}_{,100}_0.dat
+  - beadInfo_spheres_{150,100}_{,100}_1.dat
+  - beadInfo_spheres_{150,100}_{,100}_2.dat
+  - beadInfo_spheres_{150,100}_{,100}_3.dat
+  - beadInfo_spheres_{150,100}_{,100}_4.dat
+  - beadInfo_spheres_{150,100}_{,100}_5.dat
+  - beadInfo_spheres_{150,100}_{,100}_6.dat
+  - beadInfo_spheres_{150,100}_{,100}_7.dat
+  - beadInfo_spheres_{150,100}_{,100}_8.dat
+  - beadInfo_spheres_{150,100}_{,100}_9.dat
+  - beadInfo_spheres_{160,100}_{,100}_0.dat
+  - beadInfo_spheres_{160,100}_{,100}_1.dat
+  - beadInfo_spheres_{160,100}_{,100}_2.dat
+  - beadInfo_spheres_{160,100}_{,100}_3.dat
+  - beadInfo_spheres_{160,100}_{,100}_4.dat
+  - beadInfo_spheres_{160,100}_{,100}_5.dat
+  - beadInfo_spheres_{160,100}_{,100}_6.dat
+  - beadInfo_spheres_{160,100}_{,100}_7.dat
+  - beadInfo_spheres_{160,100}_{,100}_8.dat
+  - beadInfo_spheres_{160,100}_{,100}_9.dat
+  - beadInfo_spheres_{170,100}_{,100}_0.dat
+  - beadInfo_spheres_{170,100}_{,100}_1.dat
+  - beadInfo_spheres_{170,100}_{,100}_2.dat
+  - beadInfo_spheres_{170,100}_{,100}_3.dat
+  - beadInfo_spheres_{170,100}_{,100}_4.dat
+  - beadInfo_spheres_{170,100}_{,100}_5.dat
+  - beadInfo_spheres_{170,100}_{,100}_6.dat
+  - beadInfo_spheres_{170,100}_{,100}_7.dat
+  - beadInfo_spheres_{170,100}_{,100}_8.dat
+  - beadInfo_spheres_{170,100}_{,100}_9.dat
+  - beadInfo_spheres_{180,100}_{,100}_0.dat
+  - beadInfo_spheres_{180,100}_{,100}_1.dat
+  - beadInfo_spheres_{180,100}_{,100}_2.dat
+  - beadInfo_spheres_{180,100}_{,100}_3.dat
+  - beadInfo_spheres_{180,100}_{,100}_4.dat
+  - beadInfo_spheres_{180,100}_{,100}_5.dat
+  - beadInfo_spheres_{180,100}_{,100}_6.dat
+  - beadInfo_spheres_{180,100}_{,100}_7.dat
+  - beadInfo_spheres_{180,100}_{,100}_8.dat
+  - beadInfo_spheres_{180,100}_{,100}_9.dat
+  - beadInfo_spheres_{190,100}_{,100}_0.dat
+  - beadInfo_spheres_{190,100}_{,100}_1.dat
+  - beadInfo_spheres_{190,100}_{,100}_2.dat
+  - beadInfo_spheres_{190,100}_{,100}_3.dat
+  - beadInfo_spheres_{190,100}_{,100}_4.dat
+  - beadInfo_spheres_{190,100}_{,100}_5.dat
+  - beadInfo_spheres_{190,100}_{,100}_6.dat
+  - beadInfo_spheres_{190,100}_{,100}_7.dat
+  - beadInfo_spheres_{190,100}_{,100}_8.dat
+  - beadInfo_spheres_{190,100}_{,100}_9.dat
+  - beadInfo_spheres_{200}_0.dat
+  - beadInfo_spheres_{200}_1.dat
+  - beadInfo_spheres_{200}_2.dat
+  - beadInfo_spheres_{200}_3.dat
+  - beadInfo_spheres_{200}_4.dat
+  - beadInfo_spheres_{200}_5.dat
+  - beadInfo_spheres_{200}_6.dat
+  - beadInfo_spheres_{200}_7.dat
+  - beadInfo_spheres_{200}_8.dat
+  - beadInfo_spheres_{200}_9.dat
+  - beadInfo_spheres_{40,100}_0_{100,0}_0.dat
+  - beadInfo_spheres_{40,100}_0_{100,0}_1.dat
+  - beadInfo_spheres_{40,100}_0_{100,0}_2.dat
+  - beadInfo_spheres_{40,100}_0_{100,0}_3.dat
+  - beadInfo_spheres_{40,100}_0_{100,0}_4.dat
+  - beadInfo_spheres_{40,100}_0_{100,0}_5.dat
+  - beadInfo_spheres_{40,100}_0_{100,0}_6.dat
+  - beadInfo_spheres_{40,100}_0_{100,0}_7.dat
+  - beadInfo_spheres_{40,100}_0_{100,0}_8.dat
+  - beadInfo_spheres_{40,100}_0_{100,0}_9.dat
+  - beadInfo_spheres_{50,100}_0_{100,0}_0.dat
+  - beadInfo_spheres_{50,100}_0_{100,0}_1.dat
+  - beadInfo_spheres_{50,100}_0_{100,0}_2.dat
+  - beadInfo_spheres_{50,100}_0_{100,0}_3.dat
+  - beadInfo_spheres_{50,100}_0_{100,0}_4.dat
+  - beadInfo_spheres_{50,100}_0_{100,0}_5.dat
+  - beadInfo_spheres_{50,100}_0_{100,0}_6.dat
+  - beadInfo_spheres_{50,100}_0_{100,0}_7.dat
+  - beadInfo_spheres_{50,100}_0_{100,0}_8.dat
+  - beadInfo_spheres_{50,100}_0_{100,0}_9.dat
+  - beadInfo_spheres_{60,100}_0_{100,0}_0.dat
+  - beadInfo_spheres_{60,100}_0_{100,0}_1.dat
+  - beadInfo_spheres_{60,100}_0_{100,0}_2.dat
+  - beadInfo_spheres_{60,100}_0_{100,0}_3.dat
+  - beadInfo_spheres_{60,100}_0_{100,0}_4.dat
+  - beadInfo_spheres_{60,100}_0_{100,0}_5.dat
+  - beadInfo_spheres_{60,100}_0_{100,0}_6.dat
+  - beadInfo_spheres_{60,100}_0_{100,0}_7.dat
+  - beadInfo_spheres_{60,100}_0_{100,0}_8.dat
+  - beadInfo_spheres_{60,100}_0_{100,0}_9.dat
+  - beadInfo_spheres_{70,100}_0_{100,0}_0.dat
+  - beadInfo_spheres_{70,100}_0_{100,0}_1.dat
+  - beadInfo_spheres_{70,100}_0_{100,0}_2.dat
+  - beadInfo_spheres_{70,100}_0_{100,0}_3.dat
+  - beadInfo_spheres_{70,100}_0_{100,0}_4.dat
+  - beadInfo_spheres_{70,100}_0_{100,0}_5.dat
+  - beadInfo_spheres_{70,100}_0_{100,0}_6.dat
+  - beadInfo_spheres_{70,100}_0_{100,0}_7.dat
+  - beadInfo_spheres_{70,100}_0_{100,0}_8.dat
+  - beadInfo_spheres_{70,100}_0_{100,0}_9.dat
+  - beadInfo_spheres_{80,100}_0_{100,0}_0.dat
+  - beadInfo_spheres_{80,100}_0_{100,0}_1.dat
+  - beadInfo_spheres_{80,100}_0_{100,0}_2.dat
+  - beadInfo_spheres_{80,100}_0_{100,0}_3.dat
+  - beadInfo_spheres_{80,100}_0_{100,0}_4.dat
+  - beadInfo_spheres_{80,100}_0_{100,0}_5.dat
+  - beadInfo_spheres_{80,100}_0_{100,0}_6.dat
+  - beadInfo_spheres_{80,100}_0_{100,0}_7.dat
+  - beadInfo_spheres_{80,100}_0_{100,0}_8.dat
+  - beadInfo_spheres_{80,100}_0_{100,0}_9.dat
+  - beadInfo_spheres_{90,100}_0_{100,0}_0.dat
+  - beadInfo_spheres_{90,100}_0_{100,0}_1.dat
+  - beadInfo_spheres_{90,100}_0_{100,0}_2.dat
+  - beadInfo_spheres_{90,100}_0_{100,0}_3.dat
+  - beadInfo_spheres_{90,100}_0_{100,0}_4.dat
+  - beadInfo_spheres_{90,100}_0_{100,0}_5.dat
+  - beadInfo_spheres_{90,100}_0_{100,0}_6.dat
+  - beadInfo_spheres_{90,100}_0_{100,0}_7.dat
+  - beadInfo_spheres_{90,100}_0_{100,0}_8.dat
+  - beadInfo_spheres_{90,100}_0_{100,0}_9.dat
+  - beadInfo_stiffness_mixtures_a_{100,100}_100_{0,100}_0.dat
+  - beadInfo_stiffness_mixtures_a_{100,100}_100_{0,100}_1.dat
+  - beadInfo_stiffness_mixtures_a_{100,100}_100_{0,100}_2.dat
+  - beadInfo_stiffness_mixtures_a_{100,100}_100_{0,100}_3.dat
+  - beadInfo_stiffness_mixtures_a_{100,100}_100_{0,100}_4.dat
+  - inverse_spheres_hex_040.dat
+  - labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s1.json
+  - labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s2.json
+  - labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s3.json
+  - labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s4.json
+  - labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s5.json
+  - labeledDomain_anisotropic_ellipsoids.json
+  - labeledDomain_ellipsoids_100_v1.json
+  - labeledDomain_ellipsoids_100_v2.json
+  - labeledDomain_ellipsoids_100_v3.json
+  - labeledDomain_ellipsoids_100_v4.json
+  - labeledDomain_ellipsoids_100_v5.json
+  - labeledDomain_ellipsoids_110_v1.json
+  - labeledDomain_ellipsoids_110_v2.json
+  - labeledDomain_ellipsoids_110_v3.json
+  - labeledDomain_ellipsoids_110_v4.json
+  - labeledDomain_ellipsoids_110_v5.json
+  - labeledDomain_ellipsoids_120_v1.json
+  - labeledDomain_ellipsoids_120_v2.json
+  - labeledDomain_ellipsoids_120_v3.json
+  - labeledDomain_ellipsoids_120_v4.json
+  - labeledDomain_ellipsoids_120_v5.json
+  - labeledDomain_ellipsoids_60_v1.json
+  - labeledDomain_ellipsoids_60_v2.json
+  - labeledDomain_ellipsoids_60_v3.json
+  - labeledDomain_ellipsoids_60_v4.json
+  - labeledDomain_ellipsoids_60_v5.json
+  - labeledDomain_ellipsoids_70_v1.json
+  - labeledDomain_ellipsoids_70_v2.json
+  - labeledDomain_ellipsoids_70_v3.json
+  - labeledDomain_ellipsoids_70_v4.json
+  - labeledDomain_ellipsoids_70_v5.json
+  - labeledDomain_ellipsoids_80_v1.json
+  - labeledDomain_ellipsoids_80_v2.json
+  - labeledDomain_ellipsoids_80_v3.json
+  - labeledDomain_ellipsoids_80_v4.json
+  - labeledDomain_ellipsoids_80_v5.json
+  - labeledDomain_ellipsoids_90_v1.json
+  - labeledDomain_ellipsoids_90_v2.json
+  - labeledDomain_ellipsoids_90_v3.json
+  - labeledDomain_ellipsoids_90_v4.json
+  - labeledDomain_ellipsoids_90_v5.json
+  - labeledDomain_nuggets_100_v1.json
+  - labeledDomain_nuggets_100_v2.json
+  - labeledDomain_nuggets_100_v3.json
+  - labeledDomain_nuggets_100_v4.json
+  - labeledDomain_nuggets_100_v5.json
+  - labeledDomain_nuggets_120_v1.json
+  - labeledDomain_nuggets_120_v2.json
+  - labeledDomain_nuggets_60_v1.json
+  - labeledDomain_nuggets_60_v2.json
+  - labeledDomain_nuggets_60_v3.json
+  - labeledDomain_nuggets_60_v4.json
+  - labeledDomain_nuggets_60_v5.json
+  - labeledDomain_nuggets_70_1.json
+  - labeledDomain_nuggets_70_2.json
+  - labeledDomain_nuggets_70_3.json
+  - labeledDomain_nuggets_70_4.json
+  - labeledDomain_nuggets_70_5.json
+  - labeledDomain_nuggets_80_v1.json
+  - labeledDomain_nuggets_80_v2.json
+  - labeledDomain_nuggets_80_v3.json
+  - labeledDomain_nuggets_80_v4.json
+  - labeledDomain_nuggets_80_v5.json
+  - labeledDomain_perfect_ellipsoids.json
+  - labeledDomain_rbd_isotropic_ellipsoids_s1.json
+  - labeledDomain_rbd_isotropic_ellipsoids_s2.json
+  - labeledDomain_rbd_isotropic_ellipsoids_s3.json
+  - labeledDomain_rbd_isotropic_ellipsoids_s4.json
+  - labeledDomain_rbd_isotropic_ellipsoids_s5.json
+  - labeledDomain_rods_100_v1.json
+  - labeledDomain_rods_100_v2.json
+  - labeledDomain_rods_100_v3.json
+  - labeledDomain_rods_100_v4.json
+  - labeledDomain_rods_100_v5.json
+  - labeledDomain_rods_110_v1.json
+  - labeledDomain_rods_110_v2.json
+  - labeledDomain_rods_110_v3.json
+  - labeledDomain_rods_110_v4.json
+  - labeledDomain_rods_110_v5.json
+  - labeledDomain_rods_120_v1.json
+  - labeledDomain_rods_120_v2.json
+  - labeledDomain_rods_120_v3.json
+  - labeledDomain_rods_120_v4.json
+  - labeledDomain_rods_120_v5.json
+  - labeledDomain_rods_60_v1.json
+  - labeledDomain_rods_60_v10.json
+  - labeledDomain_rods_60_v2.json
+  - labeledDomain_rods_60_v3.json
+  - labeledDomain_rods_60_v4.json
+  - labeledDomain_rods_60_v7.json
+  - labeledDomain_rods_60_v8.json
+  - labeledDomain_rods_60_v9.json
+  - labeledDomain_rods_70_v1.json
+  - labeledDomain_rods_70_v2.json
+  - labeledDomain_rods_70_v3.json
+  - labeledDomain_rods_70_v4.json
+  - labeledDomain_rods_70_v5.json
+  - labeledDomain_rods_80_v1.json
+  - labeledDomain_rods_80_v2.json
+  - labeledDomain_rods_80_v3.json
+  - labeledDomain_rods_80_v4.json
+  - labeledDomain_rods_80_v5.json
+  - labeledDomain_rods_90_v1.json
+  - labeledDomain_rods_90_v2.json
+  - labeledDomain_rods_90_v3.json
+  - labeledDomain_rods_90_v4.json
+  - labeledDomain_rods_90_v5.json
+  - labeledDomain_semi-soft-spheres_100_v0.json
+  - labeledDomain_semi-soft-spheres_100_v1.json
+  - labeledDomain_semi-soft-spheres_100_v2.json
+  - labeledDomain_semi-soft-spheres_100_v3.json
+  - labeledDomain_semi-soft-spheres_100_v4.json
+  - labeledDomain_semi-soft-spheres_100_v5.json
+  - labeledDomain_semi-soft-spheres_100_v6.json
+  - labeledDomain_semi-soft-spheres_100_v7.json
+  - labeledDomain_semi-soft-spheres_100_v8.json
+  - labeledDomain_semi-soft-spheres_100_v9.json
+  - labeledDomain_semi-soft-spheres_130_v1.json
+  - labeledDomain_semi-soft-spheres_130_v2.json
+  - labeledDomain_semi-soft-spheres_130_v3.json
+  - labeledDomain_semi-soft-spheres_50.json
+  - labeledDomain_semi-soft-spheres_70_v1.json
+  - labeledDomain_semi-soft-spheres_70_v2.json
+  - labeledDomain_semi-soft-spheres_70_v3.json
+  - labeledDomain_soft-spheres_100_v0.json
+  - labeledDomain_soft-spheres_100_v1.json
+  - labeledDomain_soft-spheres_100_v2.json
+  - labeledDomain_soft-spheres_100_v3.json
+  - labeledDomain_soft-spheres_100_v4.json
+  - labeledDomain_soft-spheres_100_v5.json
+  - labeledDomain_soft-spheres_100_v6.json
+  - labeledDomain_soft-spheres_100_v7.json
+  - labeledDomain_soft-spheres_100_v8.json
+  - labeledDomain_soft-spheres_100_v9.json
+  - labeledDomain_spheres_s01.{soft-0.25,hard-0.75}.json
+  - labeledDomain_spheres_s02.{soft-0.25,hard-0.75}.json
+  - labeledDomain_spheres_s03.{soft-0.25,hard-0.75}.json
+  - labeledDomain_spheres_s04.{soft-0.25,hard-0.75}.json
+  - labeledDomain_spheres_s05.{soft-0.25,hard-0.75}.json
+  - labeledDomain_spheres_s06.{soft-0.50,hard-0.50}.json
+  - labeledDomain_spheres_s07.{soft-0.50,hard-0.50}.json
+  - labeledDomain_spheres_s08.{soft-0.50,hard-0.50}.json
+  - labeledDomain_spheres_s09.{soft-0.50,hard-0.50}.json
+  - labeledDomain_spheres_s10.{soft-0.50,hard-0.50}.json
+  - labeledDomain_spheres_s11.{soft-0.75,hard-0.25}.json
+  - labeledDomain_spheres_s12.{soft-0.75,hard-0.25}.json
+  - labeledDomain_spheres_s13.{soft-0.75,hard-0.25}.json
+  - labeledDomain_spheres_s14.{soft-0.75,hard-0.25}.json
+  - labeledDomain_spheres_s15.{soft-0.75,hard-0.25}.json
+
+--- beadInfo_spheres_mu70_sd15_v0.dat --- SKIPPED (output exists: beadInfo_spheres_mu70_sd15_v0.json)
+--- beadInfo_spheres_mu70_sd15_v1.dat --- SKIPPED (output exists: beadInfo_spheres_mu70_sd15_v1.json)
+--- beadInfo_spheres_mu70_sd15_v2.dat --- SKIPPED (output exists: beadInfo_spheres_mu70_sd15_v2.json)
+--- beadInfo_spheres_mu70_sd15_v3.dat --- SKIPPED (output exists: beadInfo_spheres_mu70_sd15_v3.json)
+--- beadInfo_spheres_mu70_sd15_v4.dat --- SKIPPED (output exists: beadInfo_spheres_mu70_sd15_v4.json)
+--- beadInfo_spheres_mu70_sd15_v5.dat --- SKIPPED (output exists: beadInfo_spheres_mu70_sd15_v5.json)
+--- beadInfo_spheres_mu70_sd15_v6.dat --- SKIPPED (output exists: beadInfo_spheres_mu70_sd15_v6.json)
+--- beadInfo_spheres_mu70_sd15_v7.dat --- SKIPPED (output exists: beadInfo_spheres_mu70_sd15_v7.json)
+--- beadInfo_spheres_mu70_sd15_v8.dat --- SKIPPED (output exists: beadInfo_spheres_mu70_sd15_v8.json)
+--- beadInfo_spheres_mu70_sd15_v9.dat --- SKIPPED (output exists: beadInfo_spheres_mu70_sd15_v9.json)
+--- beadInfo_spheres_normal_dist_100,00_01.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,00_01.json)
+--- beadInfo_spheres_normal_dist_100,00_02.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,00_02.json)
+--- beadInfo_spheres_normal_dist_100,00_03.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,00_03.json)
+--- beadInfo_spheres_normal_dist_100,00_04.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,00_04.json)
+--- beadInfo_spheres_normal_dist_100,00_05.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,00_05.json)
+--- beadInfo_spheres_normal_dist_100,00_06.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,00_06.json)
+--- beadInfo_spheres_normal_dist_100,00_07.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,00_07.json)
+--- beadInfo_spheres_normal_dist_100,00_08.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,00_08.json)
+--- beadInfo_spheres_normal_dist_100,00_09.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,00_09.json)
+--- beadInfo_spheres_normal_dist_100,00_10.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,00_10.json)
+--- beadInfo_spheres_normal_dist_100,02_01.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,02_01.json)
+--- beadInfo_spheres_normal_dist_100,02_02.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,02_02.json)
+--- beadInfo_spheres_normal_dist_100,02_03.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,02_03.json)
+--- beadInfo_spheres_normal_dist_100,02_04.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,02_04.json)
+--- beadInfo_spheres_normal_dist_100,02_05.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,02_05.json)
+--- beadInfo_spheres_normal_dist_100,02_06.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,02_06.json)
+--- beadInfo_spheres_normal_dist_100,02_07.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,02_07.json)
+--- beadInfo_spheres_normal_dist_100,02_08.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,02_08.json)
+--- beadInfo_spheres_normal_dist_100,02_09.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,02_09.json)
+--- beadInfo_spheres_normal_dist_100,02_10.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,02_10.json)
+--- beadInfo_spheres_normal_dist_100,04_01.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,04_01.json)
+--- beadInfo_spheres_normal_dist_100,04_02.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,04_02.json)
+--- beadInfo_spheres_normal_dist_100,04_03.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,04_03.json)
+--- beadInfo_spheres_normal_dist_100,04_04.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,04_04.json)
+--- beadInfo_spheres_normal_dist_100,04_05.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,04_05.json)
+--- beadInfo_spheres_normal_dist_100,04_06.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,04_06.json)
+--- beadInfo_spheres_normal_dist_100,04_07.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,04_07.json)
+--- beadInfo_spheres_normal_dist_100,04_08.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,04_08.json)
+--- beadInfo_spheres_normal_dist_100,04_09.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,04_09.json)
+--- beadInfo_spheres_normal_dist_100,04_10.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,04_10.json)
+--- beadInfo_spheres_normal_dist_100,05_01.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,05_01.json)
+--- beadInfo_spheres_normal_dist_100,05_02.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,05_02.json)
+--- beadInfo_spheres_normal_dist_100,05_03.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,05_03.json)
+--- beadInfo_spheres_normal_dist_100,05_04.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,05_04.json)
+--- beadInfo_spheres_normal_dist_100,05_05.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,05_05.json)
+--- beadInfo_spheres_normal_dist_100,05_06.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,05_06.json)
+--- beadInfo_spheres_normal_dist_100,05_07.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,05_07.json)
+--- beadInfo_spheres_normal_dist_100,05_08.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,05_08.json)
+--- beadInfo_spheres_normal_dist_100,05_09.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,05_09.json)
+--- beadInfo_spheres_normal_dist_100,05_10.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,05_10.json)
+--- beadInfo_spheres_normal_dist_100,06_01.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,06_01.json)
+--- beadInfo_spheres_normal_dist_100,06_02.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,06_02.json)
+--- beadInfo_spheres_normal_dist_100,06_03.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,06_03.json)
+--- beadInfo_spheres_normal_dist_100,06_04.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,06_04.json)
+--- beadInfo_spheres_normal_dist_100,06_05.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,06_05.json)
+--- beadInfo_spheres_normal_dist_100,06_06.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,06_06.json)
+--- beadInfo_spheres_normal_dist_100,06_07.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,06_07.json)
+--- beadInfo_spheres_normal_dist_100,06_08.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,06_08.json)
+--- beadInfo_spheres_normal_dist_100,06_09.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,06_09.json)
+--- beadInfo_spheres_normal_dist_100,06_10.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,06_10.json)
+--- beadInfo_spheres_normal_dist_100,08_01.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,08_01.json)
+--- beadInfo_spheres_normal_dist_100,08_02.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,08_02.json)
+--- beadInfo_spheres_normal_dist_100,08_03.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,08_03.json)
+--- beadInfo_spheres_normal_dist_100,08_04.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,08_04.json)
+--- beadInfo_spheres_normal_dist_100,08_05.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,08_05.json)
+--- beadInfo_spheres_normal_dist_100,08_06.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,08_06.json)
+--- beadInfo_spheres_normal_dist_100,08_07.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,08_07.json)
+--- beadInfo_spheres_normal_dist_100,08_08.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,08_08.json)
+--- beadInfo_spheres_normal_dist_100,08_09.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,08_09.json)
+--- beadInfo_spheres_normal_dist_100,08_10.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,08_10.json)
+--- beadInfo_spheres_normal_dist_100,10_01.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,10_01.json)
+--- beadInfo_spheres_normal_dist_100,10_02.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,10_02.json)
+--- beadInfo_spheres_normal_dist_100,10_03.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,10_03.json)
+--- beadInfo_spheres_normal_dist_100,10_04.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,10_04.json)
+--- beadInfo_spheres_normal_dist_100,10_05.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,10_05.json)
+--- beadInfo_spheres_normal_dist_100,10_06.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,10_06.json)
+--- beadInfo_spheres_normal_dist_100,10_07.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,10_07.json)
+--- beadInfo_spheres_normal_dist_100,10_08.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,10_08.json)
+--- beadInfo_spheres_normal_dist_100,10_09.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,10_09.json)
+--- beadInfo_spheres_normal_dist_100,10_10.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,10_10.json)
+--- beadInfo_spheres_normal_dist_100,12_01.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,12_01.json)
+--- beadInfo_spheres_normal_dist_100,12_02.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,12_02.json)
+--- beadInfo_spheres_normal_dist_100,12_03.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,12_03.json)
+--- beadInfo_spheres_normal_dist_100,12_04.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,12_04.json)
+--- beadInfo_spheres_normal_dist_100,12_05.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,12_05.json)
+--- beadInfo_spheres_normal_dist_100,12_06.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,12_06.json)
+--- beadInfo_spheres_normal_dist_100,12_07.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,12_07.json)
+--- beadInfo_spheres_normal_dist_100,12_08.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,12_08.json)
+--- beadInfo_spheres_normal_dist_100,12_09.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,12_09.json)
+--- beadInfo_spheres_normal_dist_100,12_10.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,12_10.json)
+--- beadInfo_spheres_normal_dist_100,15_01.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,15_01.json)
+--- beadInfo_spheres_normal_dist_100,15_02.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,15_02.json)
+--- beadInfo_spheres_normal_dist_100,15_03.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,15_03.json)
+--- beadInfo_spheres_normal_dist_100,15_04.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,15_04.json)
+--- beadInfo_spheres_normal_dist_100,15_05.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,15_05.json)
+--- beadInfo_spheres_normal_dist_100,15_06.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,15_06.json)
+--- beadInfo_spheres_normal_dist_100,15_07.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,15_07.json)
+--- beadInfo_spheres_normal_dist_100,15_08.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,15_08.json)
+--- beadInfo_spheres_normal_dist_100,15_09.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,15_09.json)
+--- beadInfo_spheres_normal_dist_100,15_10.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,15_10.json)
+--- beadInfo_spheres_normal_dist_100,20_01.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,20_01.json)
+--- beadInfo_spheres_normal_dist_100,20_02.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,20_02.json)
+--- beadInfo_spheres_normal_dist_100,20_03.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,20_03.json)
+--- beadInfo_spheres_normal_dist_100,20_04.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,20_04.json)
+--- beadInfo_spheres_normal_dist_100,20_05.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,20_05.json)
+--- beadInfo_spheres_normal_dist_100,20_06.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,20_06.json)
+--- beadInfo_spheres_normal_dist_100,20_07.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,20_07.json)
+--- beadInfo_spheres_normal_dist_100,20_08.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,20_08.json)
+--- beadInfo_spheres_normal_dist_100,20_09.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,20_09.json)
+--- beadInfo_spheres_normal_dist_100,20_10.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,20_10.json)
+--- beadInfo_spheres_normal_dist_100,25_01.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,25_01.json)
+--- beadInfo_spheres_normal_dist_100,25_02.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,25_02.json)
+--- beadInfo_spheres_normal_dist_100,25_03.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,25_03.json)
+--- beadInfo_spheres_normal_dist_100,25_04.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,25_04.json)
+--- beadInfo_spheres_normal_dist_100,25_05.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,25_05.json)
+--- beadInfo_spheres_normal_dist_100,25_06.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,25_06.json)
+--- beadInfo_spheres_normal_dist_100,25_07.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,25_07.json)
+--- beadInfo_spheres_normal_dist_100,25_08.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,25_08.json)
+--- beadInfo_spheres_normal_dist_100,25_09.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,25_09.json)
+--- beadInfo_spheres_normal_dist_100,25_10.dat --- SKIPPED (output exists: beadInfo_spheres_normal_dist_100,25_10.json)
+--- beadInfo_spheres_square_040.dat ---
+  Job ID: beadInfo_spheres_square_040_20260903_103139
+  Submitting...
+  Submitted. Polling for completion...
+  Job completed.
+  Downloading results...
+  [ERROR] Failed to download results: Expecting value: line 1 column 288 (char 287)
+
+--- beadInfo_spheres_uniform_40_100_v0.dat --- SKIPPED (output exists: beadInfo_spheres_uniform_40_100_v0.json)
+--- beadInfo_spheres_uniform_40_100_v1.dat --- SKIPPED (output exists: beadInfo_spheres_uniform_40_100_v1.json)
+--- beadInfo_spheres_uniform_40_100_v2.dat --- SKIPPED (output exists: beadInfo_spheres_uniform_40_100_v2.json)
+--- beadInfo_spheres_uniform_40_100_v3.dat --- SKIPPED (output exists: beadInfo_spheres_uniform_40_100_v3.json)
+--- beadInfo_spheres_uniform_40_100_v4.dat --- SKIPPED (output exists: beadInfo_spheres_uniform_40_100_v4.json)
+--- beadInfo_spheres_uniform_40_100_v5.dat --- SKIPPED (output exists: beadInfo_spheres_uniform_40_100_v5.json)
+--- beadInfo_spheres_uniform_40_100_v6.dat --- SKIPPED (output exists: beadInfo_spheres_uniform_40_100_v6.json)
+--- beadInfo_spheres_uniform_40_100_v7.dat --- SKIPPED (output exists: beadInfo_spheres_uniform_40_100_v7.json)
+--- beadInfo_spheres_uniform_40_100_v8.dat --- SKIPPED (output exists: beadInfo_spheres_uniform_40_100_v8.json)
+--- beadInfo_spheres_uniform_40_100_v9.dat --- SKIPPED (output exists: beadInfo_spheres_uniform_40_100_v9.json)
+--- beadInfo_spheres_{100,100}_100_{0,100}_0.dat --- SKIPPED (output exists: beadInfo_spheres_{100,100}_100_{0,100}_0.json)
+--- beadInfo_spheres_{100,100}_100_{0,100}_1.dat --- SKIPPED (output exists: beadInfo_spheres_{100,100}_100_{0,100}_1.json)
+--- beadInfo_spheres_{100,100}_100_{0,100}_2.dat --- SKIPPED (output exists: beadInfo_spheres_{100,100}_100_{0,100}_2.json)
+--- beadInfo_spheres_{100,100}_100_{0,100}_3.dat --- SKIPPED (output exists: beadInfo_spheres_{100,100}_100_{0,100}_3.json)
+--- beadInfo_spheres_{100,100}_100_{0,100}_4.dat --- SKIPPED (output exists: beadInfo_spheres_{100,100}_100_{0,100}_4.json)
+--- beadInfo_spheres_{100,100}_100_{0,100}_5.dat --- SKIPPED (output exists: beadInfo_spheres_{100,100}_100_{0,100}_5.json)
+--- beadInfo_spheres_{100,100}_100_{0,100}_6.dat --- SKIPPED (output exists: beadInfo_spheres_{100,100}_100_{0,100}_6.json)
+--- beadInfo_spheres_{100,100}_100_{0,100}_7.dat --- SKIPPED (output exists: beadInfo_spheres_{100,100}_100_{0,100}_7.json)
+--- beadInfo_spheres_{100,100}_100_{0,100}_8.dat --- SKIPPED (output exists: beadInfo_spheres_{100,100}_100_{0,100}_8.json)
+--- beadInfo_spheres_{100,100}_100_{0,100}_9.dat --- SKIPPED (output exists: beadInfo_spheres_{100,100}_100_{0,100}_9.json)
+--- beadInfo_spheres_{110,100}_{,100}_0.dat --- SKIPPED (output exists: beadInfo_spheres_{110,100}_{,100}_0.json)
+--- beadInfo_spheres_{110,100}_{,100}_1.dat --- SKIPPED (output exists: beadInfo_spheres_{110,100}_{,100}_1.json)
+--- beadInfo_spheres_{110,100}_{,100}_2.dat --- SKIPPED (output exists: beadInfo_spheres_{110,100}_{,100}_2.json)
+--- beadInfo_spheres_{110,100}_{,100}_3.dat --- SKIPPED (output exists: beadInfo_spheres_{110,100}_{,100}_3.json)
+--- beadInfo_spheres_{110,100}_{,100}_4.dat --- SKIPPED (output exists: beadInfo_spheres_{110,100}_{,100}_4.json)
+--- beadInfo_spheres_{110,100}_{,100}_5.dat --- SKIPPED (output exists: beadInfo_spheres_{110,100}_{,100}_5.json)
+--- beadInfo_spheres_{110,100}_{,100}_6.dat --- SKIPPED (output exists: beadInfo_spheres_{110,100}_{,100}_6.json)
+--- beadInfo_spheres_{110,100}_{,100}_7.dat --- SKIPPED (output exists: beadInfo_spheres_{110,100}_{,100}_7.json)
+--- beadInfo_spheres_{110,100}_{,100}_8.dat --- SKIPPED (output exists: beadInfo_spheres_{110,100}_{,100}_8.json)
+--- beadInfo_spheres_{110,100}_{,100}_9.dat --- SKIPPED (output exists: beadInfo_spheres_{110,100}_{,100}_9.json)
+--- beadInfo_spheres_{120,100}_{,100}_0.dat --- SKIPPED (output exists: beadInfo_spheres_{120,100}_{,100}_0.json)
+--- beadInfo_spheres_{120,100}_{,100}_1.dat --- SKIPPED (output exists: beadInfo_spheres_{120,100}_{,100}_1.json)
+--- beadInfo_spheres_{120,100}_{,100}_2.dat --- SKIPPED (output exists: beadInfo_spheres_{120,100}_{,100}_2.json)
+--- beadInfo_spheres_{120,100}_{,100}_3.dat --- SKIPPED (output exists: beadInfo_spheres_{120,100}_{,100}_3.json)
+--- beadInfo_spheres_{120,100}_{,100}_4.dat --- SKIPPED (output exists: beadInfo_spheres_{120,100}_{,100}_4.json)
+--- beadInfo_spheres_{120,100}_{,100}_5.dat --- SKIPPED (output exists: beadInfo_spheres_{120,100}_{,100}_5.json)
+--- beadInfo_spheres_{120,100}_{,100}_6.dat --- SKIPPED (output exists: beadInfo_spheres_{120,100}_{,100}_6.json)
+--- beadInfo_spheres_{120,100}_{,100}_7.dat --- SKIPPED (output exists: beadInfo_spheres_{120,100}_{,100}_7.json)
+--- beadInfo_spheres_{120,100}_{,100}_8.dat --- SKIPPED (output exists: beadInfo_spheres_{120,100}_{,100}_8.json)
+--- beadInfo_spheres_{120,100}_{,100}_9.dat --- SKIPPED (output exists: beadInfo_spheres_{120,100}_{,100}_9.json)
+--- beadInfo_spheres_{130,100}_{,100}_0.dat --- SKIPPED (output exists: beadInfo_spheres_{130,100}_{,100}_0.json)
+--- beadInfo_spheres_{130,100}_{,100}_1.dat --- SKIPPED (output exists: beadInfo_spheres_{130,100}_{,100}_1.json)
+--- beadInfo_spheres_{130,100}_{,100}_2.dat --- SKIPPED (output exists: beadInfo_spheres_{130,100}_{,100}_2.json)
+--- beadInfo_spheres_{130,100}_{,100}_3.dat --- SKIPPED (output exists: beadInfo_spheres_{130,100}_{,100}_3.json)
+--- beadInfo_spheres_{130,100}_{,100}_4.dat --- SKIPPED (output exists: beadInfo_spheres_{130,100}_{,100}_4.json)
+--- beadInfo_spheres_{130,100}_{,100}_5.dat --- SKIPPED (output exists: beadInfo_spheres_{130,100}_{,100}_5.json)
+--- beadInfo_spheres_{130,100}_{,100}_6.dat --- SKIPPED (output exists: beadInfo_spheres_{130,100}_{,100}_6.json)
+--- beadInfo_spheres_{130,100}_{,100}_7.dat --- SKIPPED (output exists: beadInfo_spheres_{130,100}_{,100}_7.json)
+--- beadInfo_spheres_{130,100}_{,100}_8.dat --- SKIPPED (output exists: beadInfo_spheres_{130,100}_{,100}_8.json)
+--- beadInfo_spheres_{130,100}_{,100}_9.dat --- SKIPPED (output exists: beadInfo_spheres_{130,100}_{,100}_9.json)
+--- beadInfo_spheres_{140,100}_{,100}_0.dat --- SKIPPED (output exists: beadInfo_spheres_{140,100}_{,100}_0.json)
+--- beadInfo_spheres_{140,100}_{,100}_1.dat --- SKIPPED (output exists: beadInfo_spheres_{140,100}_{,100}_1.json)
+--- beadInfo_spheres_{140,100}_{,100}_2.dat --- SKIPPED (output exists: beadInfo_spheres_{140,100}_{,100}_2.json)
+--- beadInfo_spheres_{140,100}_{,100}_3.dat --- SKIPPED (output exists: beadInfo_spheres_{140,100}_{,100}_3.json)
+--- beadInfo_spheres_{140,100}_{,100}_4.dat --- SKIPPED (output exists: beadInfo_spheres_{140,100}_{,100}_4.json)
+--- beadInfo_spheres_{140,100}_{,100}_5.dat --- SKIPPED (output exists: beadInfo_spheres_{140,100}_{,100}_5.json)
+--- beadInfo_spheres_{140,100}_{,100}_6.dat --- SKIPPED (output exists: beadInfo_spheres_{140,100}_{,100}_6.json)
+--- beadInfo_spheres_{140,100}_{,100}_7.dat --- SKIPPED (output exists: beadInfo_spheres_{140,100}_{,100}_7.json)
+--- beadInfo_spheres_{140,100}_{,100}_8.dat --- SKIPPED (output exists: beadInfo_spheres_{140,100}_{,100}_8.json)
+--- beadInfo_spheres_{140,100}_{,100}_9.dat --- SKIPPED (output exists: beadInfo_spheres_{140,100}_{,100}_9.json)
+--- beadInfo_spheres_{150,100}_{,100}_0.dat --- SKIPPED (output exists: beadInfo_spheres_{150,100}_{,100}_0.json)
+--- beadInfo_spheres_{150,100}_{,100}_1.dat --- SKIPPED (output exists: beadInfo_spheres_{150,100}_{,100}_1.json)
+--- beadInfo_spheres_{150,100}_{,100}_2.dat --- SKIPPED (output exists: beadInfo_spheres_{150,100}_{,100}_2.json)
+--- beadInfo_spheres_{150,100}_{,100}_3.dat --- SKIPPED (output exists: beadInfo_spheres_{150,100}_{,100}_3.json)
+--- beadInfo_spheres_{150,100}_{,100}_4.dat --- SKIPPED (output exists: beadInfo_spheres_{150,100}_{,100}_4.json)
+--- beadInfo_spheres_{150,100}_{,100}_5.dat --- SKIPPED (output exists: beadInfo_spheres_{150,100}_{,100}_5.json)
+--- beadInfo_spheres_{150,100}_{,100}_6.dat --- SKIPPED (output exists: beadInfo_spheres_{150,100}_{,100}_6.json)
+--- beadInfo_spheres_{150,100}_{,100}_7.dat --- SKIPPED (output exists: beadInfo_spheres_{150,100}_{,100}_7.json)
+--- beadInfo_spheres_{150,100}_{,100}_8.dat --- SKIPPED (output exists: beadInfo_spheres_{150,100}_{,100}_8.json)
+--- beadInfo_spheres_{150,100}_{,100}_9.dat --- SKIPPED (output exists: beadInfo_spheres_{150,100}_{,100}_9.json)
+--- beadInfo_spheres_{160,100}_{,100}_0.dat --- SKIPPED (output exists: beadInfo_spheres_{160,100}_{,100}_0.json)
+--- beadInfo_spheres_{160,100}_{,100}_1.dat --- SKIPPED (output exists: beadInfo_spheres_{160,100}_{,100}_1.json)
+--- beadInfo_spheres_{160,100}_{,100}_2.dat --- SKIPPED (output exists: beadInfo_spheres_{160,100}_{,100}_2.json)
+--- beadInfo_spheres_{160,100}_{,100}_3.dat --- SKIPPED (output exists: beadInfo_spheres_{160,100}_{,100}_3.json)
+--- beadInfo_spheres_{160,100}_{,100}_4.dat --- SKIPPED (output exists: beadInfo_spheres_{160,100}_{,100}_4.json)
+--- beadInfo_spheres_{160,100}_{,100}_5.dat --- SKIPPED (output exists: beadInfo_spheres_{160,100}_{,100}_5.json)
+--- beadInfo_spheres_{160,100}_{,100}_6.dat --- SKIPPED (output exists: beadInfo_spheres_{160,100}_{,100}_6.json)
+--- beadInfo_spheres_{160,100}_{,100}_7.dat --- SKIPPED (output exists: beadInfo_spheres_{160,100}_{,100}_7.json)
+--- beadInfo_spheres_{160,100}_{,100}_8.dat --- SKIPPED (output exists: beadInfo_spheres_{160,100}_{,100}_8.json)
+--- beadInfo_spheres_{160,100}_{,100}_9.dat --- SKIPPED (output exists: beadInfo_spheres_{160,100}_{,100}_9.json)
+--- beadInfo_spheres_{170,100}_{,100}_0.dat --- SKIPPED (output exists: beadInfo_spheres_{170,100}_{,100}_0.json)
+--- beadInfo_spheres_{170,100}_{,100}_1.dat --- SKIPPED (output exists: beadInfo_spheres_{170,100}_{,100}_1.json)
+--- beadInfo_spheres_{170,100}_{,100}_2.dat --- SKIPPED (output exists: beadInfo_spheres_{170,100}_{,100}_2.json)
+--- beadInfo_spheres_{170,100}_{,100}_3.dat --- SKIPPED (output exists: beadInfo_spheres_{170,100}_{,100}_3.json)
+--- beadInfo_spheres_{170,100}_{,100}_4.dat --- SKIPPED (output exists: beadInfo_spheres_{170,100}_{,100}_4.json)
+--- beadInfo_spheres_{170,100}_{,100}_5.dat --- SKIPPED (output exists: beadInfo_spheres_{170,100}_{,100}_5.json)
+--- beadInfo_spheres_{170,100}_{,100}_6.dat --- SKIPPED (output exists: beadInfo_spheres_{170,100}_{,100}_6.json)
+--- beadInfo_spheres_{170,100}_{,100}_7.dat --- SKIPPED (output exists: beadInfo_spheres_{170,100}_{,100}_7.json)
+--- beadInfo_spheres_{170,100}_{,100}_8.dat --- SKIPPED (output exists: beadInfo_spheres_{170,100}_{,100}_8.json)
+--- beadInfo_spheres_{170,100}_{,100}_9.dat --- SKIPPED (output exists: beadInfo_spheres_{170,100}_{,100}_9.json)
+--- beadInfo_spheres_{180,100}_{,100}_0.dat --- SKIPPED (output exists: beadInfo_spheres_{180,100}_{,100}_0.json)
+--- beadInfo_spheres_{180,100}_{,100}_1.dat --- SKIPPED (output exists: beadInfo_spheres_{180,100}_{,100}_1.json)
+--- beadInfo_spheres_{180,100}_{,100}_2.dat --- SKIPPED (output exists: beadInfo_spheres_{180,100}_{,100}_2.json)
+--- beadInfo_spheres_{180,100}_{,100}_3.dat --- SKIPPED (output exists: beadInfo_spheres_{180,100}_{,100}_3.json)
+--- beadInfo_spheres_{180,100}_{,100}_4.dat --- SKIPPED (output exists: beadInfo_spheres_{180,100}_{,100}_4.json)
+--- beadInfo_spheres_{180,100}_{,100}_5.dat --- SKIPPED (output exists: beadInfo_spheres_{180,100}_{,100}_5.json)
+--- beadInfo_spheres_{180,100}_{,100}_6.dat --- SKIPPED (output exists: beadInfo_spheres_{180,100}_{,100}_6.json)
+--- beadInfo_spheres_{180,100}_{,100}_7.dat --- SKIPPED (output exists: beadInfo_spheres_{180,100}_{,100}_7.json)
+--- beadInfo_spheres_{180,100}_{,100}_8.dat --- SKIPPED (output exists: beadInfo_spheres_{180,100}_{,100}_8.json)
+--- beadInfo_spheres_{180,100}_{,100}_9.dat --- SKIPPED (output exists: beadInfo_spheres_{180,100}_{,100}_9.json)
+--- beadInfo_spheres_{190,100}_{,100}_0.dat --- SKIPPED (output exists: beadInfo_spheres_{190,100}_{,100}_0.json)
+--- beadInfo_spheres_{190,100}_{,100}_1.dat --- SKIPPED (output exists: beadInfo_spheres_{190,100}_{,100}_1.json)
+--- beadInfo_spheres_{190,100}_{,100}_2.dat --- SKIPPED (output exists: beadInfo_spheres_{190,100}_{,100}_2.json)
+--- beadInfo_spheres_{190,100}_{,100}_3.dat --- SKIPPED (output exists: beadInfo_spheres_{190,100}_{,100}_3.json)
+--- beadInfo_spheres_{190,100}_{,100}_4.dat --- SKIPPED (output exists: beadInfo_spheres_{190,100}_{,100}_4.json)
+--- beadInfo_spheres_{190,100}_{,100}_5.dat --- SKIPPED (output exists: beadInfo_spheres_{190,100}_{,100}_5.json)
+--- beadInfo_spheres_{190,100}_{,100}_6.dat --- SKIPPED (output exists: beadInfo_spheres_{190,100}_{,100}_6.json)
+--- beadInfo_spheres_{190,100}_{,100}_7.dat --- SKIPPED (output exists: beadInfo_spheres_{190,100}_{,100}_7.json)
+--- beadInfo_spheres_{190,100}_{,100}_8.dat --- SKIPPED (output exists: beadInfo_spheres_{190,100}_{,100}_8.json)
+--- beadInfo_spheres_{190,100}_{,100}_9.dat --- SKIPPED (output exists: beadInfo_spheres_{190,100}_{,100}_9.json)
+--- beadInfo_spheres_{200}_0.dat --- SKIPPED (output exists: beadInfo_spheres_{200}_0.json)
+--- beadInfo_spheres_{200}_1.dat --- SKIPPED (output exists: beadInfo_spheres_{200}_1.json)
+--- beadInfo_spheres_{200}_2.dat --- SKIPPED (output exists: beadInfo_spheres_{200}_2.json)
+--- beadInfo_spheres_{200}_3.dat --- SKIPPED (output exists: beadInfo_spheres_{200}_3.json)
+--- beadInfo_spheres_{200}_4.dat --- SKIPPED (output exists: beadInfo_spheres_{200}_4.json)
+--- beadInfo_spheres_{200}_5.dat --- SKIPPED (output exists: beadInfo_spheres_{200}_5.json)
+--- beadInfo_spheres_{200}_6.dat --- SKIPPED (output exists: beadInfo_spheres_{200}_6.json)
+--- beadInfo_spheres_{200}_7.dat --- SKIPPED (output exists: beadInfo_spheres_{200}_7.json)
+--- beadInfo_spheres_{200}_8.dat --- SKIPPED (output exists: beadInfo_spheres_{200}_8.json)
+--- beadInfo_spheres_{200}_9.dat --- SKIPPED (output exists: beadInfo_spheres_{200}_9.json)
+--- beadInfo_spheres_{40,100}_0_{100,0}_0.dat --- SKIPPED (output exists: beadInfo_spheres_{40,100}_0_{100,0}_0.json)
+--- beadInfo_spheres_{40,100}_0_{100,0}_1.dat --- SKIPPED (output exists: beadInfo_spheres_{40,100}_0_{100,0}_1.json)
+--- beadInfo_spheres_{40,100}_0_{100,0}_2.dat --- SKIPPED (output exists: beadInfo_spheres_{40,100}_0_{100,0}_2.json)
+--- beadInfo_spheres_{40,100}_0_{100,0}_3.dat --- SKIPPED (output exists: beadInfo_spheres_{40,100}_0_{100,0}_3.json)
+--- beadInfo_spheres_{40,100}_0_{100,0}_4.dat --- SKIPPED (output exists: beadInfo_spheres_{40,100}_0_{100,0}_4.json)
+--- beadInfo_spheres_{40,100}_0_{100,0}_5.dat --- SKIPPED (output exists: beadInfo_spheres_{40,100}_0_{100,0}_5.json)
+--- beadInfo_spheres_{40,100}_0_{100,0}_6.dat --- SKIPPED (output exists: beadInfo_spheres_{40,100}_0_{100,0}_6.json)
+--- beadInfo_spheres_{40,100}_0_{100,0}_7.dat --- SKIPPED (output exists: beadInfo_spheres_{40,100}_0_{100,0}_7.json)
+--- beadInfo_spheres_{40,100}_0_{100,0}_8.dat --- SKIPPED (output exists: beadInfo_spheres_{40,100}_0_{100,0}_8.json)
+--- beadInfo_spheres_{40,100}_0_{100,0}_9.dat --- SKIPPED (output exists: beadInfo_spheres_{40,100}_0_{100,0}_9.json)
+--- beadInfo_spheres_{50,100}_0_{100,0}_0.dat --- SKIPPED (output exists: beadInfo_spheres_{50,100}_0_{100,0}_0.json)
+--- beadInfo_spheres_{50,100}_0_{100,0}_1.dat --- SKIPPED (output exists: beadInfo_spheres_{50,100}_0_{100,0}_1.json)
+--- beadInfo_spheres_{50,100}_0_{100,0}_2.dat --- SKIPPED (output exists: beadInfo_spheres_{50,100}_0_{100,0}_2.json)
+--- beadInfo_spheres_{50,100}_0_{100,0}_3.dat --- SKIPPED (output exists: beadInfo_spheres_{50,100}_0_{100,0}_3.json)
+--- beadInfo_spheres_{50,100}_0_{100,0}_4.dat --- SKIPPED (output exists: beadInfo_spheres_{50,100}_0_{100,0}_4.json)
+--- beadInfo_spheres_{50,100}_0_{100,0}_5.dat --- SKIPPED (output exists: beadInfo_spheres_{50,100}_0_{100,0}_5.json)
+--- beadInfo_spheres_{50,100}_0_{100,0}_6.dat --- SKIPPED (output exists: beadInfo_spheres_{50,100}_0_{100,0}_6.json)
+--- beadInfo_spheres_{50,100}_0_{100,0}_7.dat --- SKIPPED (output exists: beadInfo_spheres_{50,100}_0_{100,0}_7.json)
+--- beadInfo_spheres_{50,100}_0_{100,0}_8.dat --- SKIPPED (output exists: beadInfo_spheres_{50,100}_0_{100,0}_8.json)
+--- beadInfo_spheres_{50,100}_0_{100,0}_9.dat --- SKIPPED (output exists: beadInfo_spheres_{50,100}_0_{100,0}_9.json)
+--- beadInfo_spheres_{60,100}_0_{100,0}_0.dat --- SKIPPED (output exists: beadInfo_spheres_{60,100}_0_{100,0}_0.json)
+--- beadInfo_spheres_{60,100}_0_{100,0}_1.dat --- SKIPPED (output exists: beadInfo_spheres_{60,100}_0_{100,0}_1.json)
+--- beadInfo_spheres_{60,100}_0_{100,0}_2.dat --- SKIPPED (output exists: beadInfo_spheres_{60,100}_0_{100,0}_2.json)
+--- beadInfo_spheres_{60,100}_0_{100,0}_3.dat --- SKIPPED (output exists: beadInfo_spheres_{60,100}_0_{100,0}_3.json)
+--- beadInfo_spheres_{60,100}_0_{100,0}_4.dat --- SKIPPED (output exists: beadInfo_spheres_{60,100}_0_{100,0}_4.json)
+--- beadInfo_spheres_{60,100}_0_{100,0}_5.dat --- SKIPPED (output exists: beadInfo_spheres_{60,100}_0_{100,0}_5.json)
+--- beadInfo_spheres_{60,100}_0_{100,0}_6.dat --- SKIPPED (output exists: beadInfo_spheres_{60,100}_0_{100,0}_6.json)
+--- beadInfo_spheres_{60,100}_0_{100,0}_7.dat --- SKIPPED (output exists: beadInfo_spheres_{60,100}_0_{100,0}_7.json)
+--- beadInfo_spheres_{60,100}_0_{100,0}_8.dat --- SKIPPED (output exists: beadInfo_spheres_{60,100}_0_{100,0}_8.json)
+--- beadInfo_spheres_{60,100}_0_{100,0}_9.dat --- SKIPPED (output exists: beadInfo_spheres_{60,100}_0_{100,0}_9.json)
+--- beadInfo_spheres_{70,100}_0_{100,0}_0.dat --- SKIPPED (output exists: beadInfo_spheres_{70,100}_0_{100,0}_0.json)
+--- beadInfo_spheres_{70,100}_0_{100,0}_1.dat --- SKIPPED (output exists: beadInfo_spheres_{70,100}_0_{100,0}_1.json)
+--- beadInfo_spheres_{70,100}_0_{100,0}_2.dat --- SKIPPED (output exists: beadInfo_spheres_{70,100}_0_{100,0}_2.json)
+--- beadInfo_spheres_{70,100}_0_{100,0}_3.dat --- SKIPPED (output exists: beadInfo_spheres_{70,100}_0_{100,0}_3.json)
+--- beadInfo_spheres_{70,100}_0_{100,0}_4.dat --- SKIPPED (output exists: beadInfo_spheres_{70,100}_0_{100,0}_4.json)
+--- beadInfo_spheres_{70,100}_0_{100,0}_5.dat --- SKIPPED (output exists: beadInfo_spheres_{70,100}_0_{100,0}_5.json)
+--- beadInfo_spheres_{70,100}_0_{100,0}_6.dat --- SKIPPED (output exists: beadInfo_spheres_{70,100}_0_{100,0}_6.json)
+--- beadInfo_spheres_{70,100}_0_{100,0}_7.dat --- SKIPPED (output exists: beadInfo_spheres_{70,100}_0_{100,0}_7.json)
+--- beadInfo_spheres_{70,100}_0_{100,0}_8.dat --- SKIPPED (output exists: beadInfo_spheres_{70,100}_0_{100,0}_8.json)
+--- beadInfo_spheres_{70,100}_0_{100,0}_9.dat --- SKIPPED (output exists: beadInfo_spheres_{70,100}_0_{100,0}_9.json)
+--- beadInfo_spheres_{80,100}_0_{100,0}_0.dat --- SKIPPED (output exists: beadInfo_spheres_{80,100}_0_{100,0}_0.json)
+--- beadInfo_spheres_{80,100}_0_{100,0}_1.dat --- SKIPPED (output exists: beadInfo_spheres_{80,100}_0_{100,0}_1.json)
+--- beadInfo_spheres_{80,100}_0_{100,0}_2.dat --- SKIPPED (output exists: beadInfo_spheres_{80,100}_0_{100,0}_2.json)
+--- beadInfo_spheres_{80,100}_0_{100,0}_3.dat --- SKIPPED (output exists: beadInfo_spheres_{80,100}_0_{100,0}_3.json)
+--- beadInfo_spheres_{80,100}_0_{100,0}_4.dat --- SKIPPED (output exists: beadInfo_spheres_{80,100}_0_{100,0}_4.json)
+--- beadInfo_spheres_{80,100}_0_{100,0}_5.dat --- SKIPPED (output exists: beadInfo_spheres_{80,100}_0_{100,0}_5.json)
+--- beadInfo_spheres_{80,100}_0_{100,0}_6.dat --- SKIPPED (output exists: beadInfo_spheres_{80,100}_0_{100,0}_6.json)
+--- beadInfo_spheres_{80,100}_0_{100,0}_7.dat --- SKIPPED (output exists: beadInfo_spheres_{80,100}_0_{100,0}_7.json)
+--- beadInfo_spheres_{80,100}_0_{100,0}_8.dat --- SKIPPED (output exists: beadInfo_spheres_{80,100}_0_{100,0}_8.json)
+--- beadInfo_spheres_{80,100}_0_{100,0}_9.dat --- SKIPPED (output exists: beadInfo_spheres_{80,100}_0_{100,0}_9.json)
+--- beadInfo_spheres_{90,100}_0_{100,0}_0.dat --- SKIPPED (output exists: beadInfo_spheres_{90,100}_0_{100,0}_0.json)
+--- beadInfo_spheres_{90,100}_0_{100,0}_1.dat --- SKIPPED (output exists: beadInfo_spheres_{90,100}_0_{100,0}_1.json)
+--- beadInfo_spheres_{90,100}_0_{100,0}_2.dat --- SKIPPED (output exists: beadInfo_spheres_{90,100}_0_{100,0}_2.json)
+--- beadInfo_spheres_{90,100}_0_{100,0}_3.dat --- SKIPPED (output exists: beadInfo_spheres_{90,100}_0_{100,0}_3.json)
+--- beadInfo_spheres_{90,100}_0_{100,0}_4.dat --- SKIPPED (output exists: beadInfo_spheres_{90,100}_0_{100,0}_4.json)
+--- beadInfo_spheres_{90,100}_0_{100,0}_5.dat --- SKIPPED (output exists: beadInfo_spheres_{90,100}_0_{100,0}_5.json)
+--- beadInfo_spheres_{90,100}_0_{100,0}_6.dat --- SKIPPED (output exists: beadInfo_spheres_{90,100}_0_{100,0}_6.json)
+--- beadInfo_spheres_{90,100}_0_{100,0}_7.dat --- SKIPPED (output exists: beadInfo_spheres_{90,100}_0_{100,0}_7.json)
+--- beadInfo_spheres_{90,100}_0_{100,0}_8.dat --- SKIPPED (output exists: beadInfo_spheres_{90,100}_0_{100,0}_8.json)
+--- beadInfo_spheres_{90,100}_0_{100,0}_9.dat --- SKIPPED (output exists: beadInfo_spheres_{90,100}_0_{100,0}_9.json)
+--- beadInfo_stiffness_mixtures_a_{100,100}_100_{0,100}_0.dat --- SKIPPED (output exists: beadInfo_stiffness_mixtures_a_{100,100}_100_{0,100}_0.json)
+--- beadInfo_stiffness_mixtures_a_{100,100}_100_{0,100}_1.dat --- SKIPPED (output exists: beadInfo_stiffness_mixtures_a_{100,100}_100_{0,100}_1.json)
+--- beadInfo_stiffness_mixtures_a_{100,100}_100_{0,100}_2.dat --- SKIPPED (output exists: beadInfo_stiffness_mixtures_a_{100,100}_100_{0,100}_2.json)
+--- beadInfo_stiffness_mixtures_a_{100,100}_100_{0,100}_3.dat --- SKIPPED (output exists: beadInfo_stiffness_mixtures_a_{100,100}_100_{0,100}_3.json)
+--- beadInfo_stiffness_mixtures_a_{100,100}_100_{0,100}_4.dat --- SKIPPED (output exists: beadInfo_stiffness_mixtures_a_{100,100}_100_{0,100}_4.json)
+--- inverse_spheres_hex_040.dat --- SKIPPED (output exists: inverse_spheres_hex_040.json)
+--- labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s1.json ---
+  Job ID: labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s1_20260903_103224
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s1_20260903_103224 failed: Unknown error
+--- labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s2.json ---
+  Job ID: labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s2_20260903_103248
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s2_20260903_103248 failed: Unknown error
+--- labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s3.json ---
+  Job ID: labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s3_20260903_103312
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s3_20260903_103312 failed: Unknown error
+--- labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s4.json ---
+  Job ID: labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s4_20260903_103336
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s4_20260903_103336 failed: Unknown error
+--- labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s5.json ---
+  Job ID: labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s5_20260903_103359
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_FEM_Spheres_stiffness_mixtures_soft_s5_20260903_103359 failed: Unknown error
+--- labeledDomain_anisotropic_ellipsoids.json --- SKIPPED (output exists: labeledDomain_anisotropic_ellipsoids.json)
+--- labeledDomain_ellipsoids_100_v1.json --- SKIPPED (output exists: labeledDomain_ellipsoids_100_v1.json)
+--- labeledDomain_ellipsoids_100_v2.json --- SKIPPED (output exists: labeledDomain_ellipsoids_100_v2.json)
+--- labeledDomain_ellipsoids_100_v3.json --- SKIPPED (output exists: labeledDomain_ellipsoids_100_v3.json)
+--- labeledDomain_ellipsoids_100_v4.json --- SKIPPED (output exists: labeledDomain_ellipsoids_100_v4.json)
+--- labeledDomain_ellipsoids_100_v5.json --- SKIPPED (output exists: labeledDomain_ellipsoids_100_v5.json)
+--- labeledDomain_ellipsoids_110_v1.json --- SKIPPED (output exists: labeledDomain_ellipsoids_110_v1.json)
+--- labeledDomain_ellipsoids_110_v2.json --- SKIPPED (output exists: labeledDomain_ellipsoids_110_v2.json)
+--- labeledDomain_ellipsoids_110_v3.json --- SKIPPED (output exists: labeledDomain_ellipsoids_110_v3.json)
+--- labeledDomain_ellipsoids_110_v4.json --- SKIPPED (output exists: labeledDomain_ellipsoids_110_v4.json)
+--- labeledDomain_ellipsoids_110_v5.json --- SKIPPED (output exists: labeledDomain_ellipsoids_110_v5.json)
+--- labeledDomain_ellipsoids_120_v1.json --- SKIPPED (output exists: labeledDomain_ellipsoids_120_v1.json)
+--- labeledDomain_ellipsoids_120_v2.json --- SKIPPED (output exists: labeledDomain_ellipsoids_120_v2.json)
+--- labeledDomain_ellipsoids_120_v3.json --- SKIPPED (output exists: labeledDomain_ellipsoids_120_v3.json)
+--- labeledDomain_ellipsoids_120_v4.json --- SKIPPED (output exists: labeledDomain_ellipsoids_120_v4.json)
+--- labeledDomain_ellipsoids_120_v5.json --- SKIPPED (output exists: labeledDomain_ellipsoids_120_v5.json)
+--- labeledDomain_ellipsoids_60_v1.json --- SKIPPED (output exists: labeledDomain_ellipsoids_60_v1.json)
+--- labeledDomain_ellipsoids_60_v2.json --- SKIPPED (output exists: labeledDomain_ellipsoids_60_v2.json)
+--- labeledDomain_ellipsoids_60_v3.json --- SKIPPED (output exists: labeledDomain_ellipsoids_60_v3.json)
+--- labeledDomain_ellipsoids_60_v4.json --- SKIPPED (output exists: labeledDomain_ellipsoids_60_v4.json)
+--- labeledDomain_ellipsoids_60_v5.json --- SKIPPED (output exists: labeledDomain_ellipsoids_60_v5.json)
+--- labeledDomain_ellipsoids_70_v1.json --- SKIPPED (output exists: labeledDomain_ellipsoids_70_v1.json)
+--- labeledDomain_ellipsoids_70_v2.json --- SKIPPED (output exists: labeledDomain_ellipsoids_70_v2.json)
+--- labeledDomain_ellipsoids_70_v3.json --- SKIPPED (output exists: labeledDomain_ellipsoids_70_v3.json)
+--- labeledDomain_ellipsoids_70_v4.json --- SKIPPED (output exists: labeledDomain_ellipsoids_70_v4.json)
+--- labeledDomain_ellipsoids_70_v5.json --- SKIPPED (output exists: labeledDomain_ellipsoids_70_v5.json)
+--- labeledDomain_ellipsoids_80_v1.json --- SKIPPED (output exists: labeledDomain_ellipsoids_80_v1.json)
+--- labeledDomain_ellipsoids_80_v2.json --- SKIPPED (output exists: labeledDomain_ellipsoids_80_v2.json)
+--- labeledDomain_ellipsoids_80_v3.json --- SKIPPED (output exists: labeledDomain_ellipsoids_80_v3.json)
+--- labeledDomain_ellipsoids_80_v4.json --- SKIPPED (output exists: labeledDomain_ellipsoids_80_v4.json)
+--- labeledDomain_ellipsoids_80_v5.json --- SKIPPED (output exists: labeledDomain_ellipsoids_80_v5.json)
+--- labeledDomain_ellipsoids_90_v1.json --- SKIPPED (output exists: labeledDomain_ellipsoids_90_v1.json)
+--- labeledDomain_ellipsoids_90_v2.json --- SKIPPED (output exists: labeledDomain_ellipsoids_90_v2.json)
+--- labeledDomain_ellipsoids_90_v3.json --- SKIPPED (output exists: labeledDomain_ellipsoids_90_v3.json)
+--- labeledDomain_ellipsoids_90_v4.json --- SKIPPED (output exists: labeledDomain_ellipsoids_90_v4.json)
+--- labeledDomain_ellipsoids_90_v5.json --- SKIPPED (output exists: labeledDomain_ellipsoids_90_v5.json)
+--- labeledDomain_nuggets_100_v1.json --- SKIPPED (output exists: labeledDomain_nuggets_100_v1.json)
+--- labeledDomain_nuggets_100_v2.json --- SKIPPED (output exists: labeledDomain_nuggets_100_v2.json)
+--- labeledDomain_nuggets_100_v3.json --- SKIPPED (output exists: labeledDomain_nuggets_100_v3.json)
+--- labeledDomain_nuggets_100_v4.json --- SKIPPED (output exists: labeledDomain_nuggets_100_v4.json)
+--- labeledDomain_nuggets_100_v5.json --- SKIPPED (output exists: labeledDomain_nuggets_100_v5.json)
+--- labeledDomain_nuggets_120_v1.json --- SKIPPED (output exists: labeledDomain_nuggets_120_v1.json)
+--- labeledDomain_nuggets_120_v2.json --- SKIPPED (output exists: labeledDomain_nuggets_120_v2.json)
+--- labeledDomain_nuggets_60_v1.json --- SKIPPED (output exists: labeledDomain_nuggets_60_v1.json)
+--- labeledDomain_nuggets_60_v2.json --- SKIPPED (output exists: labeledDomain_nuggets_60_v2.json)
+--- labeledDomain_nuggets_60_v3.json --- SKIPPED (output exists: labeledDomain_nuggets_60_v3.json)
+--- labeledDomain_nuggets_60_v4.json --- SKIPPED (output exists: labeledDomain_nuggets_60_v4.json)
+--- labeledDomain_nuggets_60_v5.json --- SKIPPED (output exists: labeledDomain_nuggets_60_v5.json)
+--- labeledDomain_nuggets_70_1.json --- SKIPPED (output exists: labeledDomain_nuggets_70_1.json)
+--- labeledDomain_nuggets_70_2.json --- SKIPPED (output exists: labeledDomain_nuggets_70_2.json)
+--- labeledDomain_nuggets_70_3.json --- SKIPPED (output exists: labeledDomain_nuggets_70_3.json)
+--- labeledDomain_nuggets_70_4.json --- SKIPPED (output exists: labeledDomain_nuggets_70_4.json)
+--- labeledDomain_nuggets_70_5.json --- SKIPPED (output exists: labeledDomain_nuggets_70_5.json)
+--- labeledDomain_nuggets_80_v1.json --- SKIPPED (output exists: labeledDomain_nuggets_80_v1.json)
+--- labeledDomain_nuggets_80_v2.json --- SKIPPED (output exists: labeledDomain_nuggets_80_v2.json)
+--- labeledDomain_nuggets_80_v3.json --- SKIPPED (output exists: labeledDomain_nuggets_80_v3.json)
+--- labeledDomain_nuggets_80_v4.json --- SKIPPED (output exists: labeledDomain_nuggets_80_v4.json)
+--- labeledDomain_nuggets_80_v5.json --- SKIPPED (output exists: labeledDomain_nuggets_80_v5.json)
+--- labeledDomain_perfect_ellipsoids.json --- SKIPPED (output exists: labeledDomain_perfect_ellipsoids.json)
+--- labeledDomain_rbd_isotropic_ellipsoids_s1.json --- SKIPPED (output exists: labeledDomain_rbd_isotropic_ellipsoids_s1.json)
+--- labeledDomain_rbd_isotropic_ellipsoids_s2.json --- SKIPPED (output exists: labeledDomain_rbd_isotropic_ellipsoids_s2.json)
+--- labeledDomain_rbd_isotropic_ellipsoids_s3.json --- SKIPPED (output exists: labeledDomain_rbd_isotropic_ellipsoids_s3.json)
+--- labeledDomain_rbd_isotropic_ellipsoids_s4.json --- SKIPPED (output exists: labeledDomain_rbd_isotropic_ellipsoids_s4.json)
+--- labeledDomain_rbd_isotropic_ellipsoids_s5.json --- SKIPPED (output exists: labeledDomain_rbd_isotropic_ellipsoids_s5.json)
+--- labeledDomain_rods_100_v1.json --- SKIPPED (output exists: labeledDomain_rods_100_v1.json)
+--- labeledDomain_rods_100_v2.json --- SKIPPED (output exists: labeledDomain_rods_100_v2.json)
+--- labeledDomain_rods_100_v3.json --- SKIPPED (output exists: labeledDomain_rods_100_v3.json)
+--- labeledDomain_rods_100_v4.json --- SKIPPED (output exists: labeledDomain_rods_100_v4.json)
+--- labeledDomain_rods_100_v5.json --- SKIPPED (output exists: labeledDomain_rods_100_v5.json)
+--- labeledDomain_rods_110_v1.json --- SKIPPED (output exists: labeledDomain_rods_110_v1.json)
+--- labeledDomain_rods_110_v2.json --- SKIPPED (output exists: labeledDomain_rods_110_v2.json)
+--- labeledDomain_rods_110_v3.json --- SKIPPED (output exists: labeledDomain_rods_110_v3.json)
+--- labeledDomain_rods_110_v4.json --- SKIPPED (output exists: labeledDomain_rods_110_v4.json)
+--- labeledDomain_rods_110_v5.json --- SKIPPED (output exists: labeledDomain_rods_110_v5.json)
+--- labeledDomain_rods_120_v1.json --- SKIPPED (output exists: labeledDomain_rods_120_v1.json)
+--- labeledDomain_rods_120_v2.json --- SKIPPED (output exists: labeledDomain_rods_120_v2.json)
+--- labeledDomain_rods_120_v3.json --- SKIPPED (output exists: labeledDomain_rods_120_v3.json)
+--- labeledDomain_rods_120_v4.json --- SKIPPED (output exists: labeledDomain_rods_120_v4.json)
+--- labeledDomain_rods_120_v5.json --- SKIPPED (output exists: labeledDomain_rods_120_v5.json)
+--- labeledDomain_rods_60_v1.json --- SKIPPED (output exists: labeledDomain_rods_60_v1.json)
+--- labeledDomain_rods_60_v10.json --- SKIPPED (output exists: labeledDomain_rods_60_v10.json)
+--- labeledDomain_rods_60_v2.json --- SKIPPED (output exists: labeledDomain_rods_60_v2.json)
+--- labeledDomain_rods_60_v3.json --- SKIPPED (output exists: labeledDomain_rods_60_v3.json)
+--- labeledDomain_rods_60_v4.json --- SKIPPED (output exists: labeledDomain_rods_60_v4.json)
+--- labeledDomain_rods_60_v7.json --- SKIPPED (output exists: labeledDomain_rods_60_v7.json)
+--- labeledDomain_rods_60_v8.json --- SKIPPED (output exists: labeledDomain_rods_60_v8.json)
+--- labeledDomain_rods_60_v9.json --- SKIPPED (output exists: labeledDomain_rods_60_v9.json)
+--- labeledDomain_rods_70_v1.json --- SKIPPED (output exists: labeledDomain_rods_70_v1.json)
+--- labeledDomain_rods_70_v2.json --- SKIPPED (output exists: labeledDomain_rods_70_v2.json)
+--- labeledDomain_rods_70_v3.json --- SKIPPED (output exists: labeledDomain_rods_70_v3.json)
+--- labeledDomain_rods_70_v4.json --- SKIPPED (output exists: labeledDomain_rods_70_v4.json)
+--- labeledDomain_rods_70_v5.json --- SKIPPED (output exists: labeledDomain_rods_70_v5.json)
+--- labeledDomain_rods_80_v1.json --- SKIPPED (output exists: labeledDomain_rods_80_v1.json)
+--- labeledDomain_rods_80_v2.json --- SKIPPED (output exists: labeledDomain_rods_80_v2.json)
+--- labeledDomain_rods_80_v3.json --- SKIPPED (output exists: labeledDomain_rods_80_v3.json)
+--- labeledDomain_rods_80_v4.json --- SKIPPED (output exists: labeledDomain_rods_80_v4.json)
+--- labeledDomain_rods_80_v5.json --- SKIPPED (output exists: labeledDomain_rods_80_v5.json)
+--- labeledDomain_rods_90_v1.json --- SKIPPED (output exists: labeledDomain_rods_90_v1.json)
+--- labeledDomain_rods_90_v2.json --- SKIPPED (output exists: labeledDomain_rods_90_v2.json)
+--- labeledDomain_rods_90_v3.json --- SKIPPED (output exists: labeledDomain_rods_90_v3.json)
+--- labeledDomain_rods_90_v4.json --- SKIPPED (output exists: labeledDomain_rods_90_v4.json)
+--- labeledDomain_rods_90_v5.json --- SKIPPED (output exists: labeledDomain_rods_90_v5.json)
+--- labeledDomain_semi-soft-spheres_100_v0.json ---
+  Job ID: labeledDomain_semi-soft-spheres_100_v0_20260903_103422
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_semi-soft-spheres_100_v0_20260903_103422 failed: Unknown error
+--- labeledDomain_semi-soft-spheres_100_v1.json ---
+  Job ID: labeledDomain_semi-soft-spheres_100_v1_20260903_103445
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_semi-soft-spheres_100_v1_20260903_103445 failed: Unknown error
+--- labeledDomain_semi-soft-spheres_100_v2.json ---
+  Job ID: labeledDomain_semi-soft-spheres_100_v2_20260903_103508
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_semi-soft-spheres_100_v2_20260903_103508 failed: Unknown error
+--- labeledDomain_semi-soft-spheres_100_v3.json --- SKIPPED (output exists: labeledDomain_semi-soft-spheres_100_v3.json)
+--- labeledDomain_semi-soft-spheres_100_v4.json ---
+  Job ID: labeledDomain_semi-soft-spheres_100_v4_20260903_103531
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_semi-soft-spheres_100_v4_20260903_103531 failed: Unknown error
+--- labeledDomain_semi-soft-spheres_100_v5.json ---
+  Job ID: labeledDomain_semi-soft-spheres_100_v5_20260903_103551
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_semi-soft-spheres_100_v5_20260903_103551 failed: Unknown error
+--- labeledDomain_semi-soft-spheres_100_v6.json ---
+  Job ID: labeledDomain_semi-soft-spheres_100_v6_20260903_103615
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_semi-soft-spheres_100_v6_20260903_103615 failed: Unknown error
+--- labeledDomain_semi-soft-spheres_100_v7.json ---
+  Job ID: labeledDomain_semi-soft-spheres_100_v7_20260903_103651
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_semi-soft-spheres_100_v7_20260903_103651 failed: Unknown error
+--- labeledDomain_semi-soft-spheres_100_v8.json ---
+  Job ID: labeledDomain_semi-soft-spheres_100_v8_20260903_103716
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_semi-soft-spheres_100_v8_20260903_103716 failed: Unknown error
+--- labeledDomain_semi-soft-spheres_100_v9.json ---
+  Job ID: labeledDomain_semi-soft-spheres_100_v9_20260903_103738
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_semi-soft-spheres_100_v9_20260903_103738 failed: Unknown error
+--- labeledDomain_semi-soft-spheres_130_v1.json ---
+  Job ID: labeledDomain_semi-soft-spheres_130_v1_20260903_103803
+  Submitting...
+  Submitted. Polling for completion...
+  Job completed.
+  Downloading results...
+  Saved to: data/descriptors/cpp/batch_all_scaffolds/labeledDomain_semi-soft-spheres_130_v1.json
+
+--- labeledDomain_semi-soft-spheres_130_v2.json ---
+  Job ID: labeledDomain_semi-soft-spheres_130_v2_20260903_103812
+  Submitting...
+  Submitted. Polling for completion...
+  Job completed.
+  Downloading results...
+  Saved to: data/descriptors/cpp/batch_all_scaffolds/labeledDomain_semi-soft-spheres_130_v2.json
+
+--- labeledDomain_semi-soft-spheres_130_v3.json ---
+  Job ID: labeledDomain_semi-soft-spheres_130_v3_20260903_103824
+  Submitting...
+  Submitted. Polling for completion...
+  Job completed.
+  Downloading results...
+  Saved to: data/descriptors/cpp/batch_all_scaffolds/labeledDomain_semi-soft-spheres_130_v3.json
+
+--- labeledDomain_semi-soft-spheres_50.json ---
+  Job ID: labeledDomain_semi-soft-spheres_50_20260903_103834
+  Submitting...
+  Submitted. Polling for completion...
+  Job completed.
+  Downloading results...
+  Saved to: data/descriptors/cpp/batch_all_scaffolds/labeledDomain_semi-soft-spheres_50.json
+
+--- labeledDomain_semi-soft-spheres_70_v1.json ---
+  Job ID: labeledDomain_semi-soft-spheres_70_v1_20260903_103904
+  Submitting...
+  Submitted. Polling for completion...
+  Job completed.
+  Downloading results...
+  Saved to: data/descriptors/cpp/batch_all_scaffolds/labeledDomain_semi-soft-spheres_70_v1.json
+
+--- labeledDomain_semi-soft-spheres_70_v2.json ---
+  Job ID: labeledDomain_semi-soft-spheres_70_v2_20260903_103918
+  Submitting...
+  Submitted. Polling for completion...
+  Job completed.
+  Downloading results...
+  Saved to: data/descriptors/cpp/batch_all_scaffolds/labeledDomain_semi-soft-spheres_70_v2.json
+
+--- labeledDomain_semi-soft-spheres_70_v3.json ---
+  Job ID: labeledDomain_semi-soft-spheres_70_v3_20260903_103931
+  Submitting...
+  Submitted. Polling for completion...
+  Job completed.
+  Downloading results...
+  Saved to: data/descriptors/cpp/batch_all_scaffolds/labeledDomain_semi-soft-spheres_70_v3.json
+
+--- labeledDomain_soft-spheres_100_v0.json ---
+  Job ID: labeledDomain_soft-spheres_100_v0_20260903_103945
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_soft-spheres_100_v0_20260903_103945 failed: Unknown error
+--- labeledDomain_soft-spheres_100_v1.json ---
+  Job ID: labeledDomain_soft-spheres_100_v1_20260903_104010
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_soft-spheres_100_v1_20260903_104010 failed: Unknown error
+--- labeledDomain_soft-spheres_100_v2.json ---
+  Job ID: labeledDomain_soft-spheres_100_v2_20260903_104037
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_soft-spheres_100_v2_20260903_104037 failed: Unknown error
+--- labeledDomain_soft-spheres_100_v3.json ---
+  Job ID: labeledDomain_soft-spheres_100_v3_20260903_104102
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_soft-spheres_100_v3_20260903_104102 failed: Unknown error
+--- labeledDomain_soft-spheres_100_v4.json ---
+  Job ID: labeledDomain_soft-spheres_100_v4_20260903_104137
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_soft-spheres_100_v4_20260903_104137 failed: Unknown error
+--- labeledDomain_soft-spheres_100_v5.json ---
+  Job ID: labeledDomain_soft-spheres_100_v5_20260903_104203
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_soft-spheres_100_v5_20260903_104203 failed: Unknown error
+--- labeledDomain_soft-spheres_100_v6.json ---
+  Job ID: labeledDomain_soft-spheres_100_v6_20260903_104230
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_soft-spheres_100_v6_20260903_104230 failed: Unknown error
+--- labeledDomain_soft-spheres_100_v7.json ---
+  Job ID: labeledDomain_soft-spheres_100_v7_20260903_104256
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_soft-spheres_100_v7_20260903_104256 failed: Unknown error
+--- labeledDomain_soft-spheres_100_v8.json ---
+  Job ID: labeledDomain_soft-spheres_100_v8_20260903_104322
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_soft-spheres_100_v8_20260903_104322 failed: Unknown error
+--- labeledDomain_soft-spheres_100_v9.json ---
+  Job ID: labeledDomain_soft-spheres_100_v9_20260903_104347
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_soft-spheres_100_v9_20260903_104347 failed: Unknown error
+--- labeledDomain_spheres_s01.{soft-0.25,hard-0.75}.json ---
+  Job ID: labeledDomain_spheres_s01.{soft-0.25,hard-0.75}_20260903_104412
+  Submitting...
+  Submitted. Polling for completion...
+  Job completed.
+  Downloading results...
+  Saved to: data/descriptors/cpp/batch_all_scaffolds/labeledDomain_spheres_s01.{soft-0.25,hard-0.75}.json
+
+--- labeledDomain_spheres_s02.{soft-0.25,hard-0.75}.json ---
+  Job ID: labeledDomain_spheres_s02.{soft-0.25,hard-0.75}_20260903_104422
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_spheres_s02.{soft-0.25,hard-0.75}_20260903_104422 failed: Unknown error
+--- labeledDomain_spheres_s03.{soft-0.25,hard-0.75}.json ---
+  Job ID: labeledDomain_spheres_s03.{soft-0.25,hard-0.75}_20260903_104444
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_spheres_s03.{soft-0.25,hard-0.75}_20260903_104444 failed: Unknown error
+--- labeledDomain_spheres_s04.{soft-0.25,hard-0.75}.json ---
+  Job ID: labeledDomain_spheres_s04.{soft-0.25,hard-0.75}_20260903_104511
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_spheres_s04.{soft-0.25,hard-0.75}_20260903_104511 failed: Unknown error
+--- labeledDomain_spheres_s05.{soft-0.25,hard-0.75}.json ---
+  Job ID: labeledDomain_spheres_s05.{soft-0.25,hard-0.75}_20260903_104533
+  Submitting...
+  Submitted. Polling for completion...
+  Job completed.
+  Downloading results...
+  Saved to: data/descriptors/cpp/batch_all_scaffolds/labeledDomain_spheres_s05.{soft-0.25,hard-0.75}.json
+
+--- labeledDomain_spheres_s06.{soft-0.50,hard-0.50}.json ---
+  Job ID: labeledDomain_spheres_s06.{soft-0.50,hard-0.50}_20260903_104545
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_spheres_s06.{soft-0.50,hard-0.50}_20260903_104545 failed: Unknown error
+--- labeledDomain_spheres_s07.{soft-0.50,hard-0.50}.json ---
+  Job ID: labeledDomain_spheres_s07.{soft-0.50,hard-0.50}_20260903_104616
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_spheres_s07.{soft-0.50,hard-0.50}_20260903_104616 failed: Unknown error
+--- labeledDomain_spheres_s08.{soft-0.50,hard-0.50}.json ---
+  Job ID: labeledDomain_spheres_s08.{soft-0.50,hard-0.50}_20260903_104641
+  Submitting...
+  Submitted. Polling for completion...
+  Job completed.
+  Downloading results...
+  Saved to: data/descriptors/cpp/batch_all_scaffolds/labeledDomain_spheres_s08.{soft-0.50,hard-0.50}.json
+
+--- labeledDomain_spheres_s09.{soft-0.50,hard-0.50}.json ---
+  Job ID: labeledDomain_spheres_s09.{soft-0.50,hard-0.50}_20260903_104650
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_spheres_s09.{soft-0.50,hard-0.50}_20260903_104650 failed: Unknown error
+--- labeledDomain_spheres_s10.{soft-0.50,hard-0.50}.json ---
+  Job ID: labeledDomain_spheres_s10.{soft-0.50,hard-0.50}_20260903_104722
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_spheres_s10.{soft-0.50,hard-0.50}_20260903_104722 failed: Unknown error
+--- labeledDomain_spheres_s11.{soft-0.75,hard-0.25}.json ---
+  Job ID: labeledDomain_spheres_s11.{soft-0.75,hard-0.25}_20260903_104747
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_spheres_s11.{soft-0.75,hard-0.25}_20260903_104747 failed: Unknown error
+--- labeledDomain_spheres_s12.{soft-0.75,hard-0.25}.json ---
+  Job ID: labeledDomain_spheres_s12.{soft-0.75,hard-0.25}_20260903_104814
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_spheres_s12.{soft-0.75,hard-0.25}_20260903_104814 failed: Unknown error
+--- labeledDomain_spheres_s13.{soft-0.75,hard-0.25}.json ---
+  Job ID: labeledDomain_spheres_s13.{soft-0.75,hard-0.25}_20260903_104840
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_spheres_s13.{soft-0.75,hard-0.25}_20260903_104840 failed: Unknown error
+--- labeledDomain_spheres_s14.{soft-0.75,hard-0.25}.json ---
+  Job ID: labeledDomain_spheres_s14.{soft-0.75,hard-0.25}_20260903_104906
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_spheres_s14.{soft-0.75,hard-0.25}_20260903_104906 failed: Unknown error
+--- labeledDomain_spheres_s15.{soft-0.75,hard-0.25}.json ---
+  Job ID: labeledDomain_spheres_s15.{soft-0.75,hard-0.25}_20260903_104931
+  Submitting...
+  Submitted. Polling for completion...
+  [ERROR] Job labeledDomain_spheres_s15.{soft-0.75,hard-0.25}_20260903_104931 failed: Unknown error
+=== Submission Complete: 10 succeeded, 409 skipped, 37 failed ===

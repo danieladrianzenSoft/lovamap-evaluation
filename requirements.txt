@@ -6,3 +6,5 @@ openpyxl
 scipy
 tqdm
 jupyter
+requests
+python-dotenv

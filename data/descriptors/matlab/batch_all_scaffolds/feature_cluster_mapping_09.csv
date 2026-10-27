@@ -1,0 +1,213 @@
+representative,cluster_size,dropped_features
+VFFIntPores,1,
+NumIntPoresdivParticlesSurrIntPores,1,
+PeakAdjacencyMatrixEigenvalue,1,
+MaxNumPeaksAmongSurfacePores,1,
+LigandHotspotsVolFrac,1,
+MaxNumEquidistParticles,1,
+AvgInternalDiam_max,1,
+AspectRatio_min,1,
+AspectRatio_max,1,
+AspectRatio_peak_frequency,1,
+NumConnectedPores_min,1,
+NumConnectedPores_q1,1,
+NumConnectedPores_median,1,
+NumConnectedPores_q3,1,
+NumConnectedPores_mean,1,
+NumConnectedPores_peak_frequency,1,
+NumSurroundingPores_min,1,
+NumSurroundingPores_peak_frequency,1,
+NormalizedNeighbors_min,1,
+NormalizedNeighbors_max,1,
+NormalizedNeighbors_mean,1,
+NormalizedNeighbors_mode,1,
+NormalizedNeighbors_std_error,1,
+NormalizedNeighbors_peak_frequency,1,
+MeanLocalThickness_min,1,
+MeanLocalThickness_q1,1,
+MeanLocalThickness_max,1,
+NumPeaks_min,1,
+NumPeaks_q3,1,
+NumPeaks_mean,1,
+NumPeaks_mode,1,
+LargestDoorDiam_max,1,
+LargestDoorDiam_peak_frequency,1,
+SmallestDoorDiam_max,1,
+SmallestDoorDiam_peak_frequency,1,
+EllipsoidAxis1Length_q3,1,
+EllipsoidAxis3Length_max,1,
+EllipsoidClassification_min,1,
+EllipsoidClassification_q3,1,
+EllipsoidClassification_max,1,
+EllipsoidClassification_mean,1,
+EllipsoidClassification_mode,1,
+EllipsoidClassification_std_error,1,
+EllipsoidClassification_peak_frequency,1,
+IsotropyAnisotropy_min,1,
+IsotropyAnisotropy_q1,1,
+IsotropyAnisotropy_median,1,
+IsotropyAnisotropy_q3,1,
+IsotropyAnisotropy_max,1,
+IsotropyAnisotropy_mean,1,
+IsotropyAnisotropy_mode,1,
+IsotropyAnisotropy_peak_frequency,1,
+LigandConcentration_min,1,
+LigandConcentration_std_error,1,
+LigandConcentration_peak_frequency,1,
+OpenSA_max,1,
+xCentroid_q1,1,
+xCentroid_q3,1,
+xCentroid_mode,1,
+xCentroid_std_error,1,
+xCentroid_peak_frequency,1,
+yCentroid_min,1,
+yCentroid_q1,1,
+yCentroid_median,1,
+yCentroid_q3,1,
+yCentroid_mean,1,
+yCentroid_mode,1,
+yCentroid_peak_frequency,1,
+zCentroid_q1,1,
+zCentroid_median,1,
+zCentroid_q3,1,
+zCentroid_mean,1,
+zCentroid_mode,1,
+zCentroid_peak_frequency,1,
+ParticleDiam_min,1,
+ParticleDiam_q1,1,
+ParticleDiam_max,1,
+ParticleDiam_std_error,1,
+ParticleDiam_peak_frequency,1,
+ParticleCoord_min,1,
+ParticleCoord_max,1,
+ParticleCoord_mode,1,
+ParticleCoord_peak_frequency,1,
+TouchingParticleCoord_min,1,
+TouchingParticleCoord_max,1,
+TouchingParticleCoord_std_error,1,
+TouchingParticleCoord_peak_frequency,1,
+ExitDoorDiam_max,1,
+ExitDoorDiam_peak_frequency,1,
+IntDoorDiam_peak_frequency,1,
+CrawlSpaceWidth_median,1,
+CrawlSpaceWidth_max,1,
+CrawlSpaceWidth_mode,1,
+PathLength_min,1,
+PathLength_max,1,
+PathLength_mode,1,
+PathLength_peak_frequency,1,
+TortuositybyLength_min,1,
+TortuositybyLength_median,1,
+TortuositybyLength_q3,1,
+TortuositybyLength_max,1,
+TortuositybyLength_mean,1,
+TortuositybyLength_mode,1,
+TortuositybyLength_peak_frequency,1,
+TortuositybyVol_min,1,
+TortuositybyVol_q1,1,
+TortuositybyVol_median,1,
+TortuositybyVol_max,1,
+TortuositybyVol_mode,1,
+TortuositybyVol_peak_frequency,1,
+NumIntPoresPath_min,1,
+NumIntPoresPath_std_error,1,
+NumIntPoresPath_peak_frequency,1,
+NumExtPoresPath_min,1,
+NumExtPoresPath_q1,1,
+NumExtPoresPath_median,1,
+NumExtPoresPath_q3,1,
+NumExtPoresPath_max,1,
+NumExtPoresPath_mean,1,
+NumExtPoresPath_mode,1,
+NumExtPoresPath_std_error,1,
+NumExtPoresPath_peak_frequency,1,
+NumParticlesEnclosingIntPath_min,1,
+NumParticlesEnclosingIntPath_std_error,1,
+NumParticlesEnclosingIntPath_peak_frequency,1,
+NumParticlesEnclosingExitPath_min,1,
+NumParticlesEnclosingExitPath_std_error,1,
+NumParticlesEnclosingExitPath_peak_frequency,1,
+NumBottlenecksTotal_std_error,1,
+NumBottlenecksTotal_peak_frequency,1,
+NumBottlenecksDoors_min,1,
+NumBottlenecksDoors_std_error,1,
+NumBottlenecksDoors_peak_frequency,1,
+AvgBottleneckDiamDoors_peak_frequency,1,
+SurfaceLigandConc_min,1,
+SurfaceLigandConc_mode,1,
+SurfaceLigandConc_std_error,1,
+SurfaceLigandConc_peak_frequency,1,
+SurfaceAccessibleLigand_min,1,
+SurfaceAccessibleLigand_q1,1,
+SurfaceAccessibleLigand_max,1,
+RegionsVol10_std_error,1,
+RegionsVol10_peak_frequency,1,
+RegionsVol30_min,1,
+RegionsVol30_q1,1,
+RegionsVol30_median,1,
+RegionsVol30_q3,1,
+RegionsVol30_max,1,
+RegionsVol30_mode,1,
+RegionsVol60_min,1,
+RegionsVol60_q1,1,
+RegionsVol60_median,1,
+RegionsVol60_max,1,
+RegionsVol60_std_error,1,
+RegionsVol60_peak_frequency,1,
+NumIntDoors,18,NumParticles; NumParticleContacts; NumTotalPores; NumIntPores; NumExitDoors; NumPaths; ParticleDiam_median; ParticleDiam_q3; ParticleDiam_mean; ParticleDiam_mode; NumBottlenecksTotal_min; NumBottlenecksTotal_q1; NumBottlenecksTotal_median; NumBottlenecksTotal_q3; NumBottlenecksTotal_max; NumBottlenecksTotal_mean; NumBottlenecksTotal_mode
+VFF,2,ParticlePackingFraction
+ParticleCoord_mean,5,ParticleAdjacencyMatrixEigenvalue; ParticleCoord_q1; ParticleCoord_median; ParticleCoord_q3
+PoreAdjacencyMatrixEigenvalue,2,NumParticlesEnclosingExitPath_max
+Volume_min,21,SA_min; CharacteristicLength_min; LongestLength_min; AvgInternalDiam_min; LargestEnclosedSphereDiam_min; LargestDoorDiam_min; SmallestDoorDiam_min; SmallestDoorDiam_q1; SmallestDoorDiam_median; SmallestDoorDiam_q3; SmallestDoorDiam_mean; SmallestDoorDiam_mode; EllipsoidAxis1Length_min; EllipsoidAxis2Length_min; EllipsoidAxis3Length_min; LigandConcentration_max; AccessibleLigand_min; ParticleSA_min; OpenSA_min; zCentroid_max
+LargestEnclosedSphereDiam_mean,69,Volume_q1; Volume_median; Volume_q3; Volume_mean; Volume_mode; SA_q1; SA_median; SA_q3; SA_mean; SA_mode; CharacteristicLength_q1; CharacteristicLength_median; CharacteristicLength_q3; CharacteristicLength_mean; CharacteristicLength_mode; LongestLength_q1; LongestLength_median; LongestLength_q3; LongestLength_mean; LongestLength_mode; AvgInternalDiam_q1; AvgInternalDiam_median; AvgInternalDiam_q3; AvgInternalDiam_mean; AvgInternalDiam_mode; LargestEnclosedSphereDiam_q1; LargestEnclosedSphereDiam_median; LargestEnclosedSphereDiam_q3; LargestEnclosedSphereDiam_mode; LargestDoorDiam_q1; LargestDoorDiam_median; LargestDoorDiam_q3; LargestDoorDiam_mean; LargestDoorDiam_mode; EllipsoidAxis1Length_q1; EllipsoidAxis1Length_median; EllipsoidAxis1Length_mean; EllipsoidAxis1Length_mode; EllipsoidAxis2Length_q1; EllipsoidAxis2Length_median; EllipsoidAxis2Length_q3; EllipsoidAxis2Length_mean; EllipsoidAxis2Length_mode; EllipsoidAxis3Length_q1; EllipsoidAxis3Length_median; EllipsoidAxis3Length_q3; EllipsoidAxis3Length_mean; EllipsoidAxis3Length_mode; LigandConcentration_q1; LigandConcentration_median; LigandConcentration_q3; LigandConcentration_mean; LigandConcentration_mode; AccessibleLigand_q1; AccessibleLigand_median; AccessibleLigand_q3; AccessibleLigand_mean; AccessibleLigand_mode; ParticleSA_q1; ParticleSA_median; ParticleSA_q3; ParticleSA_mean; ParticleSA_mode; OpenSA_q1; OpenSA_median; OpenSA_q3; OpenSA_mean; OpenSA_mode
+SA_max,5,Volume_max; EllipsoidAxis2Length_max; AccessibleLigand_max; ParticleSA_max
+CharacteristicLength_std_error,16,Volume_std_error; SA_std_error; LongestLength_std_error; AvgInternalDiam_std_error; AspectRatio_std_error; MeanLocalThickness_std_error; LargestEnclosedSphereDiam_std_error; LargestDoorDiam_std_error; SmallestDoorDiam_std_error; EllipsoidAxis1Length_std_error; EllipsoidAxis2Length_std_error; EllipsoidAxis3Length_std_error; AccessibleLigand_std_error; ParticleSA_std_error; OpenSA_std_error
+NumParticleEdges_std_error,9,Volume_peak_frequency; SA_peak_frequency; NumHallways_std_error; NumCrawlSpaces_std_error; NumPeaks_std_error; NumSurrParticles_std_error; AccessibleLigand_peak_frequency; ParticleSA_peak_frequency
+CharacteristicLength_max,2,LargestEnclosedSphereDiam_max
+EllipsoidAxis3Length_peak_frequency,3,CharacteristicLength_peak_frequency; EllipsoidAxis2Length_peak_frequency
+LongestLength_max,2,EllipsoidAxis1Length_max
+LongestLength_peak_frequency,2,EllipsoidAxis1Length_peak_frequency
+AvgInternalDiam_peak_frequency,2,LargestEnclosedSphereDiam_peak_frequency
+AspectRatio_mode,3,AspectRatio_q1; AspectRatio_median
+AspectRatio_q3,2,AspectRatio_mean
+NumHallways_min,3,NumCrawlSpaces_min; NumParticleEdges_min
+NumParticleEdges_q1,10,NumHallways_q1; NumHallways_median; NumCrawlSpaces_q1; NumParticleEdges_median; NormalizedNeighbors_q1; NormalizedNeighbors_median; NormalizedNeighbors_q3; NumSurrParticles_min; NumSurrParticles_q1
+NumParticleEdges_q3,4,NumHallways_q3; NumCrawlSpaces_q3; NumSurrParticles_q3
+NumParticleEdges_max,5,NumHallways_max; NumCrawlSpaces_max; NumPeaks_max; NumSurrParticles_max
+NumParticleEdges_mean,4,NumHallways_mean; NumCrawlSpaces_mean; NumSurrParticles_mean
+NumHallways_mode,4,NumCrawlSpaces_mode; NumParticleEdges_mode; NumSurrParticles_mode
+NumHallways_peak_frequency,5,NumCrawlSpaces_peak_frequency; NumParticleEdges_peak_frequency; NumPeaks_peak_frequency; NumSurrParticles_peak_frequency
+NumCrawlSpaces_median,2,NumSurrParticles_median
+NumConnectedPores_max,2,NumSurroundingPores_max
+NumSurroundingPores_mean,6,NumConnectedPores_mode; NumSurroundingPores_q1; NumSurroundingPores_median; NumSurroundingPores_q3; NumSurroundingPores_mode
+NumConnectedPores_std_error,2,NumSurroundingPores_std_error
+MeanLocalThickness_median,4,MeanLocalThickness_q3; MeanLocalThickness_mean; MeanLocalThickness_mode
+MeanLocalThickness_peak_frequency,2,OpenSA_peak_frequency
+NumPeaks_q1,2,NumPeaks_median
+EllipsoidClassification_q1,2,EllipsoidClassification_median
+yCentroid_std_error,3,IsotropyAnisotropy_std_error; zCentroid_std_error
+zCentroid_min,4,xCentroid_min; xCentroid_max; yCentroid_max
+xCentroid_median,2,xCentroid_mean
+ParticleCoord_std_error,2,ExitDoorDiam_std_error
+TouchingParticleCoord_mean,5,TouchingParticleCoord_q1; TouchingParticleCoord_median; TouchingParticleCoord_q3; TouchingParticleCoord_mode
+ExitDoorDiam_min,3,IntDoorDiam_min; SurfaceLigandConc_max
+ExitDoorDiam_median,6,ExitDoorDiam_q1; ExitDoorDiam_q3; ExitDoorDiam_mean; ExitDoorDiam_mode; SurfaceAccessibleLigand_mean
+AvgBottleneckDiamTotal_q1,18,IntDoorDiam_q1; IntDoorDiam_median; IntDoorDiam_q3; IntDoorDiam_mean; IntDoorDiam_mode; NumIntPoresPath_q1; NumIntPoresPath_median; NumIntPoresPath_q3; NumIntPoresPath_max; NumIntPoresPath_mean; NumIntPoresPath_mode; AvgBottleneckDiamTotal_min; AvgBottleneckDiamTotal_median; AvgBottleneckDiamTotal_q3; AvgBottleneckDiamTotal_mean; AvgBottleneckDiamTotal_mode; RegionsVol30_mean
+IntDoorDiam_max,2,AvgBottleneckDiamTotal_max
+IntDoorDiam_std_error,6,CrawlSpaceWidth_std_error; AvgBottleneckDiamTotal_std_error; AvgBottleneckDiamTotal_peak_frequency; RegionsVol30_std_error; RegionsVol30_peak_frequency
+CrawlSpaceWidth_min,2,CrawlSpaceWidth_q1
+CrawlSpaceWidth_q3,2,CrawlSpaceWidth_mean
+AvgBottleneckDiamDoors_mean,9,CrawlSpaceWidth_peak_frequency; AvgBottleneckDiamDoors_min; AvgBottleneckDiamDoors_q1; AvgBottleneckDiamDoors_median; AvgBottleneckDiamDoors_q3; AvgBottleneckDiamDoors_max; AvgBottleneckDiamDoors_mode; AvgBottleneckDiamDoors_std_error
+PathLength_mean,5,PathLength_q1; PathLength_median; PathLength_q3; TortuositybyLength_q1
+PathLength_std_error,3,TortuositybyLength_std_error; TortuositybyVol_std_error
+TortuositybyVol_q3,2,TortuositybyVol_mean
+NumParticlesEnclosingIntPath_mean,6,NumParticlesEnclosingIntPath_q1; NumParticlesEnclosingIntPath_median; NumParticlesEnclosingIntPath_q3; NumParticlesEnclosingIntPath_max; NumParticlesEnclosingIntPath_mode
+NumParticlesEnclosingExitPath_median,3,NumParticlesEnclosingExitPath_q1; NumParticlesEnclosingExitPath_mode
+NumParticlesEnclosingExitPath_q3,2,NumParticlesEnclosingExitPath_mean
+NumBottlenecksDoors_mean,6,NumBottlenecksDoors_q1; NumBottlenecksDoors_median; NumBottlenecksDoors_q3; NumBottlenecksDoors_max; NumBottlenecksDoors_mode
+SurfaceAccessibleLigand_mode,4,SurfaceLigandConc_q1; SurfaceAccessibleLigand_median; SurfaceAccessibleLigand_q3
+SurfaceLigandConc_mean,3,SurfaceLigandConc_median; SurfaceLigandConc_q3
+SurfaceAccessibleLigand_std_error,2,SurfaceAccessibleLigand_peak_frequency
+RegionsVol0_min,8,RegionsVol0_q1; RegionsVol0_median; RegionsVol0_q3; RegionsVol0_max; RegionsVol0_mean; RegionsVol0_mode; RegionsVol10_max
+RegionsVol10_mode,6,RegionsVol10_min; RegionsVol10_q1; RegionsVol10_median; RegionsVol10_q3; RegionsVol10_mean
+RegionsVol60_mean,3,RegionsVol60_q3; RegionsVol60_mode
