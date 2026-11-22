@@ -1,0 +1,32 @@
+/Users/dzen/anaconda3/lib/python3.10/site-packages/pandas/core/arrays/masked.py:61: UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.5' currently installed).
+  from pandas.core import (
+=== LOVAMAP API Submission Workflow ===
+  API URL      : https://core.lovamap.com
+  Scaffold dir : /Users/dzen/Library/CloudStorage/Box-Box/Lindsay
+  Riley/Electronic Notebook/Void Space Project/MIMC/Data/Domains/Particles/Simulated/Jsons
+  Output dir   : /Users/dzen/Documents/LOVAMAP/Repos/LOVAMAP_Evaluation/data/descriptors/cpp/batch_11182026
+  dx           : 2.0
+  Generate mesh: False
+  Poll interval: 3.0s
+  Job timeout  : 120.0s
+
+Authenticating...
+  Authenticated successfully.
+
+[WARN] No scaffold files found to submit.
+/Users/dzen/anaconda3/lib/python3.10/site-packages/pandas/core/arrays/masked.py:61: UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.5' currently installed).
+  from pandas.core import (
+=== LOVAMAP API Submission Workflow ===
+  API URL      : https://core.lovamap.com
+  Scaffold dir : /Users/dzen/Library/CloudStorage/Box-Box/Lindsay
+  Riley/Electronic Notebook/Void Space Project/MIMC/Data/Domains/Particles/Simulated/Jsons
+  Output dir   : /Users/dzen/Documents/LOVAMAP/Repos/LOVAMAP_Evaluation/data/descriptors/cpp/batch_11182026
+  dx           : 2.0
+  Generate mesh: False
+  Poll interval: 3.0s
+  Job timeout  : 120.0s
+
+Authenticating...
+  Authenticated successfully.
+
+[WARN] No scaffold files found to submit.

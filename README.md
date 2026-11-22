@@ -214,32 +214,62 @@ Output:
 
 **Note:** The `stats` workflow must be run first to generate the input CSV.
 
-## Running Long Jobs in the Background
+## Full Deck: Submitting All Simulated Scaffolds
 
-For large submission batches (hundreds of scaffolds), run the process in the background so it survives terminal closure:
+The full simulated scaffold deck (~456 files) lives in two Box directories:
+
+```
+Box/Lindsay Riley/Electronic Notebook/Void Space Project/MIMC/Data/Domains/Particles/Simulated/
+├── Jsons/    # labeledDomain_*.json files (ellipsoids, rods, nuggets, directionality, semi-soft, stiffness mixtures)
+└── Dats/     # beadInfo_*.dat files (spheres, normal/uniform distributions, hexagonal, square)
+```
+
+The corresponding MATLAB gold-standard outputs are in a separate Box folder:
+
+```
+Box/MIMC/lovamap_data_descriptors/
+├── spheres/          # 17 Excel files, ~10 sheets each
+├── ellipsoids/       # 7 files, ~5 sheets each
+├── rods/             # 7 files
+├── nuggets/          # 5 files
+├── ...               # 12 domain folders total
+└── bidisperse/       # 54 files (no C++ counterparts yet)
+```
+
+### Re-running all C++ jobs from scratch
+
+When the C++ version is updated and you need fresh results for the full deck:
 
 ```bash
+# 1. (Optional) Build/refresh the MATLAB mapping if Box data changed
+python scripts/build_full_mapping.py
+
+# 2. Submit all scaffolds — each run gets a timestamped directory
 nohup python run.py submit \
-  --scaffold-dir /path/to/Jsons /path/to/Dats \
-  --output-dir data/descriptors/cpp/batch_all_scaffolds \
+  --scaffold-dir \
+    "/Users/dzen/Library/CloudStorage/Box-Box/Lindsay Riley/Electronic Notebook/Void Space Project/MIMC/Data/Domains/Particles/Simulated/Jsons" \
+    "/Users/dzen/Library/CloudStorage/Box-Box/Lindsay Riley/Electronic Notebook/Void Space Project/MIMC/Data/Domains/Particles/Simulated/Dats" \
+  --output-dir data/descriptors/cpp/batch_all_MMDDYYYY \
   --timeout 300 > submit_all.log 2>&1 &
-```
+# Replace MMDDYYYY with today's date, e.g. batch_all_11182026
 
-Monitor progress:
-```bash
+# 3. Monitor progress
 tail -f submit_all.log
+ls data/descriptors/cpp/batch_all_MMDDYYYY/*.json | wc -l   # count completed
+
+# 4. After submission completes, run comparison against MATLAB
+python run.py comparison \
+  --pairs file_pairs_all.csv \
+  --matlab-dir data/descriptors/matlab/batch_all_scaffolds \
+  --cpp-dir data/descriptors/cpp/batch_all_MMDDYYYY \
+  --no-plots
 ```
 
-Press `Ctrl+C` to stop watching the log (the job keeps running).
+Output naming convention: `batch_all_MMDDYYYY` for full-deck runs, `batch_MMDDYYYY` for smaller ad-hoc runs (the default when `--output-dir` is omitted).
 
-Check how many scaffolds have completed:
-```bash
-ls data/descriptors/cpp/batch_all_scaffolds/*.json | wc -l
-```
+**Resume support:** If the submission is interrupted, rerun the same command — it skips scaffolds whose output JSON already exists. To force a full re-run, delete the output directory first.
 
-If the process crashes (network error, etc.), rerun the same command — the resume logic skips scaffolds whose output already exists.
-
-Both stdout and stderr go to the log file, so any errors will appear there too.
+**Note:** `.dat` scaffolds (spheres) include boundary particles that MATLAB removes before computing descriptors. This causes small NumParticles differences (~3-5%) for those scaffolds. The `clean` workflow can remove boundary particles before submission if needed: `python run.py clean` then point `--scaffold-dir` at `data/scaffolds/clean/`.
 
 ## Descriptor Mappings
 

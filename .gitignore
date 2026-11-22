@@ -1,5 +1,6 @@
 data/comparison_analysis/*
 data/descriptors/cpp/*
+data/descriptors/matlab/batch_all_scaffolds/
 .env
 *.DS_Store
 __pycache__/
