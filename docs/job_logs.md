@@ -74,6 +74,18 @@ python run.py logs beadInfo_square100_20261122_103045 --save data/debug/failed_j
 
 When no job ID is given, the command lists jobs matching the provided filters via `GET /jobs`.
 
+Example output:
+```
+Found 3 job(s) (page 1/1)
+
+  [        2]  beadInfo_square100_20261122_103045  (beadInfo_square100.dat)  submitted 2026-11-22T10:30:45Z
+  [        3]  beadInfo_hex200_20261122_103212  (beadInfo_hex200.dat)  submitted 2026-11-22T10:32:12Z
+             error: [INPUT] Error: Missing required parameters: dz
+  [        2]  labeledDomain_ellipsoids_20261122_103400  (labeledDomain_ellipsoids_100_v1.json)  submitted 2026-11-22T10:34:00Z
+```
+
+**Note on status values**: The API returns job status as integers (0=Pending, 1=Running, 2=Completed, 3=Failed, 4=Stopped). The `--status` filter accepts the string names (e.g. `Failed`), which the API resolves server-side.
+
 ### Filtering by status
 
 Valid statuses: `Pending`, `Running`, `Completed`, `Failed`, `Stopped` (case-insensitive). Comma-separate for multiple:
@@ -158,14 +170,38 @@ python run.py logs --status Stopped --start 2026-11-01
 python run.py logs some-job-id --save debug_logs.txt
 ```
 
-## API Endpoints Used
+## API Details
 
 | Use Case | Endpoint |
 |---|---|
-| Single job logs | `GET /jobs/{jobId}/logs` |
-| List/query jobs | `GET /jobs?page=&limit=&status=&start=&end=&include=` |
+| Single job logs | `GET /jobs/{jobId}/logs` → pre-formatted text |
+| List/query jobs | `GET /jobs?page=&limit=&status=&start=&end=&include=` → paginated JSON |
 
 Both endpoints require JWT authentication (handled automatically using `.env` credentials).
+
+The list endpoint returns a paginated envelope:
+```json
+{
+  "items": [
+    {
+      "id": 1,
+      "jobId": "beadInfo_square100_20261122_103045",
+      "fileName": "beadInfo_square100.dat",
+      "status": 2,
+      "errorMessage": null,
+      "submittedAt": "2026-11-22T10:30:45Z",
+      "stdOut": null,
+      "stdErr": null
+    }
+  ],
+  "page": 1,
+  "limit": 50,
+  "totalCount": 1,
+  "totalPages": 1
+}
+```
+
+JSON keys are camelCase. Status is an integer (0=Pending, 1=Running, 2=Completed, 3=Failed, 4=Stopped). `stdOut`/`stdErr` are `null` unless `?include=logs` is specified.
 
 ## CLI Options Reference
 
