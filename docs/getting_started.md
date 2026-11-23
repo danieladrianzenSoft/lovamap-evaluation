@@ -161,6 +161,7 @@ Currently mapped: **73 descriptors** total. Some may have empty values in C++ de
 | `python run.py clean` | Remove particles that cross the bounding box, so C++ gets the same geometry MATLAB used |
 | `python run.py stats` | Summarize one source's descriptors into a flat CSV (not a MATLAB vs C++ comparison) |
 | `python run.py reduce` | Remove redundant columns from the stats CSV via correlation clustering |
+| `python run.py logs` | Fetch job logs or list/query jobs from the API (see `docs/job_logs.md`) |
 
 Every command supports `--help` for full option details (e.g. `python run.py comparison --help`).
 
@@ -250,4 +251,5 @@ To compare a new scaffold:
 
 - `docs/mapping_status.md` — complete list of all descriptors with MATLAB/C++ names
 - `docs/descriptor_analysis_summary.md` — results from analyzing 400+ scaffolds
+- `docs/job_logs.md` — how to query job status and retrieve execution logs
 - `README.md` — full reference for all command-line options

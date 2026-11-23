@@ -2,8 +2,8 @@
 """
 Generate an interactive HTML dashboard from comparison_summary.xlsx.
 
-Includes sample distribution histograms for vector descriptors and
-separates unimplemented C++ descriptors into a muted section.
+Includes poor-fit scaffold lists, sample distribution histograms for vector
+descriptors, and a separate section for unimplemented C++ descriptors.
 
 Usage:
     python scripts/generate_dashboard.py
@@ -330,19 +330,20 @@ def build_dashboard(
     ).reset_index()
     cat_vector["pct"] = (cat_vector["n_similar"] / cat_vector["n_total"] * 100).round(1)
 
-    # --- Build dissimilar details JSON ---
+    # Use the workbook's flags so the list respects the comparison run's thresholds.
     dissimilar_details = {}
     for _, row in impl_summary.iterrows():
         desc = row["descriptor"]
         kind = row["kind"]
         df = scalar_df if kind == "scalar" else vector_df
-        sub = df[df["key"] == desc]
-        dissim = sub[sub["similar"] == False].copy()
-        if len(dissim) == 0:
-            continue
+        dissim = df.loc[df["key"].eq(desc) & df["similar"].eq(False)]
+        if kind == "scalar":
+            dissim = dissim.sort_values(["rel_diff", "id"], ascending=[False, True])
+        else:
+            dissim = dissim.sort_values(["ks_pvalue", "ks_stat", "id"], ascending=[True, False, True])
         details = []
         for _, r in dissim.iterrows():
-            d = {"id": r["id"], "category": r.get("category", "")}
+            d = {"id": html_mod.escape(str(r["id"])), "category": html_mod.escape(r["category"])}
             if kind == "scalar":
                 d["matlab"] = fmt(r.get("matlab_value"))
                 d["cpp"] = fmt(r.get("cpp_value"))
@@ -350,12 +351,14 @@ def build_dashboard(
             else:
                 d["n_matlab"] = int(r.get("n_matlab", 0)) if not pd.isna(r.get("n_matlab", 0)) else 0
                 d["n_cpp"] = int(r.get("n_cpp", 0)) if not pd.isna(r.get("n_cpp", 0)) else 0
+                d["ks_pvalue"] = fmt(r.get("ks_pvalue"), 4)
                 d["ks_stat"] = fmt(r.get("ks_stat"), 4)
                 d["wasserstein"] = fmt(r.get("wasserstein"), 4)
+                d["rmse"] = fmt(r.get("rmse"), 4)
             details.append(d)
         dissimilar_details[desc] = details
 
-    details_json = json.dumps(dissimilar_details, default=str)
+    details_json = json.dumps(dissimilar_details).replace("<", "\\u003c")
 
     # --- Build histogram JSON (descriptor -> [{label, src}]) ---
     hist_json_data = {}
@@ -378,13 +381,11 @@ def build_dashboard(
         else:
             metric = f"Med. KS p-val: {fmt(row.get('median_ks_pvalue'), 4)}"
 
-        has_expand = desc in dissimilar_details or desc in histograms
-        expand_attr = f'onclick="toggleDetails(\'{html_mod.escape(desc, quote=True)}\')" style="cursor:pointer"' if has_expand else ""
-        arrow = '<span class="arrow">&#9654;</span>' if has_expand else '<span class="arrow" style="visibility:hidden">&#9654;</span>'
+        desc_attr = html_mod.escape(desc, quote=True)
 
         desc_rows.append(f"""
-        <tr class="desc-row" data-pct="{pct}" data-kind="{kind}" {expand_attr}>
-            <td>{arrow} <strong>{html_mod.escape(desc)}</strong></td>
+        <tr class="desc-row" data-pct="{pct}" data-kind="{kind}" data-descriptor="{desc_attr}" onclick="toggleDetails(this.dataset.descriptor)" style="cursor:pointer">
+            <td><span class="arrow">&#9654;</span> <strong>{desc_attr}</strong></td>
             <td><span class="badge badge-{kind}">{kind}</span></td>
             <td style="text-align:center">
                 <div class="pct-bar-container">
@@ -636,38 +637,30 @@ function toggleDetails(desc) {{
                 html += '</div>';
             }}
 
-            // Dissimilar files table
+            // Poor-fit scaffold pairs
             const details = dissimilarDetails[desc];
-            if (details && details.length > 0) {{
-                const isScalar = 'matlab' in details[0];
-
-                // Tab bar: show first 20 / all
-                const showAll = details.length <= 30;
-                const displayDetails = showAll ? details : details.slice(0, 20);
-                html += '<div class="detail-count">' + details.length + ' dissimilar file(s)' + (showAll ? '' : ' &mdash; showing first 20') + '</div>';
-
-                html += '<table class="detail-table"><thead><tr><th>File ID</th><th>Category</th>';
+            if (details.length === 0) {{
+                html += '<p class="detail-count">No scaffold pairs were flagged as dissimilar.</p>';
+            }} else {{
+                const isScalar = row.previousElementSibling.dataset.kind === 'scalar';
+                html += '<div class="detail-count"><strong>Poor-fit scaffolds (' + details.length + ')</strong> &middot; Flagged as dissimilar by the comparison workflow</div>';
+                html += '<table class="detail-table"><thead><tr><th>Scaffold ID</th><th>Category</th>';
                 if (isScalar) {{
                     html += '<th>MATLAB</th><th>C++</th><th>Rel Diff</th>';
                 }} else {{
-                    html += '<th>n MATLAB</th><th>n C++</th><th>KS Stat</th><th>Wasserstein</th>';
+                    html += '<th>n MATLAB</th><th>n C++</th><th>KS p-value</th><th>KS Stat</th><th>Wasserstein</th><th>RMSE</th>';
                 }}
                 html += '</tr></thead><tbody>';
-                for (const d of displayDetails) {{
+                for (const d of details) {{
                     html += '<tr><td>' + d.id + '</td><td>' + d.category + '</td>';
                     if (isScalar) {{
                         html += '<td>' + d.matlab + '</td><td>' + d.cpp + '</td><td>' + d.rel_diff + '</td>';
                     }} else {{
-                        html += '<td>' + d.n_matlab + '</td><td>' + d.n_cpp + '</td><td>' + d.ks_stat + '</td><td>' + d.wasserstein + '</td>';
+                        html += '<td>' + d.n_matlab + '</td><td>' + d.n_cpp + '</td><td>' + d.ks_pvalue + '</td><td>' + d.ks_stat + '</td><td>' + d.wasserstein + '</td><td>' + d.rmse + '</td>';
                     }}
                     html += '</tr>';
                 }}
                 html += '</tbody></table>';
-
-                if (!showAll) {{
-                    html += '<div id="remaining-' + desc + '" style="display:none"></div>';
-                    html += '<button onclick="showAll(\\\'' + desc + '\\\')" style="margin-top:8px;padding:4px 12px;border:1px solid #cbd5e1;border-radius:6px;background:white;font-size:0.82rem;cursor:pointer">Show all ' + details.length + ' files</button>';
-                }}
             }}
 
             contentDiv.innerHTML = html;
@@ -676,33 +669,6 @@ function toggleDetails(desc) {{
         row.style.display = 'none';
         arrow.classList.remove('open');
     }}
-}}
-
-function showAll(desc) {{
-    const details = dissimilarDetails[desc];
-    if (!details) return;
-    const isScalar = 'matlab' in details[0];
-    const contentDiv = document.getElementById('detail-content-' + desc);
-    // Rebuild table with all entries
-    const tables = contentDiv.querySelectorAll('.detail-table');
-    if (tables.length === 0) return;
-    const tbody = tables[tables.length - 1].querySelector('tbody');
-    tbody.innerHTML = '';
-    for (const d of details) {{
-        let row = '<tr><td>' + d.id + '</td><td>' + d.category + '</td>';
-        if (isScalar) {{
-            row += '<td>' + d.matlab + '</td><td>' + d.cpp + '</td><td>' + d.rel_diff + '</td>';
-        }} else {{
-            row += '<td>' + d.n_matlab + '</td><td>' + d.n_cpp + '</td><td>' + d.ks_stat + '</td><td>' + d.wasserstein + '</td>';
-        }}
-        row += '</tr>';
-        tbody.innerHTML += row;
-    }}
-    // Update count and remove button
-    const countDiv = contentDiv.querySelector('.detail-count');
-    if (countDiv) countDiv.textContent = details.length + ' dissimilar file(s)';
-    const btn = contentDiv.querySelector('button');
-    if (btn) btn.remove();
 }}
 
 function filterTable() {{

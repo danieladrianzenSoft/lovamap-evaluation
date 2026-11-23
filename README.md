@@ -214,6 +214,33 @@ Output:
 
 **Note:** The `stats` workflow must be run first to generate the input CSV.
 
+### 7) Job Logs Workflow
+
+Fetches execution logs for a single job, or lists/queries jobs from the LOVAMAP Core API with optional filters.
+
+Run:
+```bash
+# Get logs for a single job
+python run.py logs <job_id>
+
+# List recent failed jobs
+python run.py logs --status Failed
+
+# List jobs from a specific date range
+python run.py logs --start 2026-11-01 --end 2026-11-22
+```
+
+Key options:
+- `job_id` (positional) — fetch logs for this job. If omitted, lists jobs matching filters.
+- `--save PATH` — save single-job logs to a file instead of printing
+- `--status STATUS` — comma-separated status filter (e.g. `Failed`, `Completed,Failed`)
+- `--start DATE` / `--end DATE` — date range filter (ISO 8601 or `YYYY-MM-DD`; default: last 7 days)
+- `--page N` / `--limit N` — pagination (default: page 1, 50 per page, max 200)
+- `--include-logs` — include stdout/stderr preview in job list output
+- `--all-pages` — fetch and display all pages
+
+See `docs/job_logs.md` for detailed usage and examples.
+
 ## Full Deck: Submitting All Simulated Scaffolds
 
 The full simulated scaffold deck (~456 files) lives in two Box directories:

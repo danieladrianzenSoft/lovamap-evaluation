@@ -71,9 +71,55 @@ def get_raw_results(cfg: SubmissionConfig, token: str, job_id: str) -> Dict[str,
     return resp.json()
 
 
+def get_job_logs(cfg: SubmissionConfig, token: str, job_id: str) -> str:
+    """GET /jobs/{jobId}/logs → formatted log text."""
+    url = f"{cfg.api_base_url}/jobs/{job_id}/logs"
+    headers = {"Authorization": f"Bearer {token}"}
+    resp = requests.get(url, headers=headers)
+    resp.raise_for_status()
+    return resp.text
+
+
+def list_jobs(
+    cfg: SubmissionConfig,
+    token: str,
+    *,
+    page: int = 1,
+    limit: int = 50,
+    status: Optional[str] = None,
+    start: Optional[str] = None,
+    end: Optional[str] = None,
+    include_logs: bool = False,
+) -> Dict[str, Any]:
+    """
+    GET /jobs → paginated job list.
+
+    Args:
+        status: Comma-separated status filter (e.g. "Failed", "Failed,Stopped").
+        start/end: Date range for SubmittedAt (ISO 8601 or YYYY-MM-DD).
+        include_logs: If True, adds ?include=logs to inline StdOut/StdErr.
+
+    Returns dict with 'items', 'page', 'limit', 'totalCount', 'totalPages'.
+    """
+    url = f"{cfg.api_base_url}/jobs"
+    headers = {"Authorization": f"Bearer {token}"}
+    params: Dict[str, Any] = {"page": page, "limit": limit}
+    if status:
+        params["status"] = status
+    if start:
+        params["start"] = start
+    if end:
+        params["end"] = end
+    if include_logs:
+        params["include"] = "logs"
+    resp = requests.get(url, headers=headers, params=params)
+    resp.raise_for_status()
+    return resp.json()
+
+
 # ---------- Polling ----------
 
-# API job status codes
+# API job status codes (ASP.NET serializes the JobStatus enum as integers)
 STATUS_COMPLETED = 2
 STATUS_FAILED = 3
 
@@ -98,7 +144,7 @@ def poll_until_complete(
         if status_code == STATUS_COMPLETED:
             return status_resp
         if status_code == STATUS_FAILED:
-            error_msg = status_resp.get("error", "Unknown error")
+            error_msg = status_resp.get("errorMessage", "Unknown error")
             raise RuntimeError(f"Job {job_id} failed: {error_msg}")
 
         time.sleep(cfg.poll_interval)

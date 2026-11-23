@@ -45,7 +45,7 @@ from config.comparison import load_comparison_config, DEFAULT_CPP_BASE, _find_la
 from config.submission import load_submission_config
 from core.comparison import run_comparison
 from core.data_cleaning import batch_clean_raw_data
-from core.submission import run_submission
+from core.submission import run_submission, authenticate, get_job_logs, list_jobs
 from core.statistics import run_statistics, run_reduce
 
 
@@ -240,6 +240,94 @@ def run_reduce_workflow(args) -> None:
     print()
 
     run_reduce(stats_csv, out_dir, threshold=args.threshold)
+
+
+def run_logs_workflow(args) -> None:
+    """Fetch logs for a single job or list/query jobs from the API."""
+    from config.submission import load_submission_config
+
+    cfg = load_submission_config(api_base_url=args.api_url)
+
+    print("Authenticating...")
+    try:
+        token = authenticate(cfg)
+    except Exception as e:
+        print(f"[ERROR] Authentication failed: {e}")
+        return
+    print("  Authenticated successfully.\n")
+
+    if args.job_id:
+        # Single job: fetch and display (or save) its logs
+        print(f"Fetching logs for job: {args.job_id}")
+        try:
+            log_text = get_job_logs(cfg, token, args.job_id)
+        except Exception as e:
+            print(f"[ERROR] Failed to fetch logs: {e}")
+            return
+
+        if args.save:
+            out_path = Path(args.save)
+            out_path.parent.mkdir(parents=True, exist_ok=True)
+            out_path.write_text(log_text)
+            print(f"Logs saved to: {out_path}")
+        else:
+            print(log_text)
+    else:
+        # List/query jobs with filters
+        page = args.page
+        total_shown = 0
+        while True:
+            try:
+                data = list_jobs(
+                    cfg, token,
+                    page=page,
+                    limit=args.limit,
+                    status=args.status,
+                    start=args.start,
+                    end=args.end,
+                    include_logs=args.include_logs,
+                )
+            except Exception as e:
+                print(f"[ERROR] Failed to list jobs: {e}")
+                return
+
+            items = data.get("items", [])
+            total_count = data.get("totalCount", 0)
+            total_pages = data.get("totalPages", 0)
+
+            if page == args.page:
+                print(f"Found {total_count} job(s) (page {page}/{total_pages})\n")
+
+            for job in items:
+                status = job.get("status", "?")
+                job_id = job.get("jobId", "?")
+                file_name = job.get("fileName", "?")
+                submitted = job.get("submittedAt", "?")
+                error = job.get("errorMessage")
+
+                line = f"  [{str(status):>9s}]  {job_id}  ({file_name})  submitted {submitted}"
+                if error:
+                    line += f"\n             error: {error}"
+
+                if args.include_logs:
+                    stdout = job.get("stdOut")
+                    stderr = job.get("stdErr")
+                    if stdout:
+                        line += f"\n             stdout: {stdout[:200]}{'...' if len(stdout) > 200 else ''}"
+                    if stderr:
+                        line += f"\n             stderr: {stderr[:200]}{'...' if len(stderr) > 200 else ''}"
+
+                print(line)
+                total_shown += 1
+
+            if not items or page >= total_pages or not args.all_pages:
+                break
+            page += 1
+
+        if total_shown == 0:
+            print("  No jobs found matching the given filters.")
+        elif total_pages > 1 and not args.all_pages:
+            print(f"\n  Showing page {args.page} of {total_pages}. Use --all-pages to show all, or --page N to jump.")
 
 
 def _add_submission_args(parser: argparse.ArgumentParser) -> None:
@@ -507,6 +595,74 @@ def main() -> None:
         help="Minimum |Spearman r| to consider features redundant (default: 0.95).",
     )
     reduce_parser.set_defaults(func=run_reduce_workflow)
+
+    # --- Logs subcommand ---
+    logs_parser = subparsers.add_parser(
+        "logs",
+        help="Fetch job logs or list jobs from the LOVAMAP Core API.",
+    )
+    logs_parser.add_argument(
+        "job_id",
+        type=str,
+        nargs="?",
+        default=None,
+        help="Job ID to fetch logs for. If omitted, lists jobs matching the given filters.",
+    )
+    logs_parser.add_argument(
+        "--api-url",
+        type=str,
+        default=None,
+        help="LOVAMAP Core API base URL.",
+    )
+    logs_parser.add_argument(
+        "--save",
+        type=str,
+        default=None,
+        help="Save single-job logs to this file path instead of printing.",
+    )
+    logs_parser.add_argument(
+        "--status",
+        type=str,
+        default=None,
+        help="Comma-separated status filter (e.g. Failed, Completed,Failed).",
+    )
+    logs_parser.add_argument(
+        "--start",
+        type=str,
+        default=None,
+        help="Start of date range (ISO 8601 or YYYY-MM-DD). Default: last 7 days.",
+    )
+    logs_parser.add_argument(
+        "--end",
+        type=str,
+        default=None,
+        help="End of date range (ISO 8601 or YYYY-MM-DD). Default: now.",
+    )
+    logs_parser.add_argument(
+        "--page",
+        type=int,
+        default=1,
+        help="Page number (default: 1).",
+    )
+    logs_parser.add_argument(
+        "--limit",
+        type=int,
+        default=50,
+        help="Items per page (max 200, default: 50).",
+    )
+    logs_parser.add_argument(
+        "--include-logs",
+        action="store_true",
+        default=False,
+        help="Include stdout/stderr in job list output.",
+    )
+    logs_parser.add_argument(
+        "--all-pages",
+        action="store_true",
+        default=False,
+        help="Fetch and display all pages (default: first page only).",
+    )
+    logs_parser.set_defaults(func=run_logs_workflow)
 
     args = parser.parse_args()
     args.func(args)
